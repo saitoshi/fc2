@@ -27,7 +27,18 @@
     background-size: cover;
   }
 
+  .posts {
+    background-image: url(" https://github.com/saitoshi/project-site/blob/master/src/components/images/essay.png?raw=true");
+    /* Set a specific height */
+    min-height: 400px;
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 </style>
 
 <body>
@@ -70,23 +81,21 @@
     <h3 class="ui center aligned header">RECENT PROJECTS</h3>
     <hr>
     <div class="ui two cards">
-      <div class="ui centered card">
+      <a class="ui centered card" href = "internaloha.html">
         <img class="ui medium centered image"
           src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
         <div class="content">
           <div class="center aligned header"> Internaloha</div>
-          <div class="center aligned meta"> On Going </div>
+          <div class="center aligned meta"> 2021-12-10 </div>
           <div class="description">
             A scrapper for the RadGrad application where it extracts information for recent internships.
           </div>
         </div>
         <div class="extra content">
           Software Engineering, Scrapper, TypeScript
-          <a href="internaloha.html" class="ui bottom attached button">
-            MORE DETAILS</a>
         </div>
-      </div>
-      <div class="ui centered card">
+      </a>
+      <a class="ui centered card" href = "radgrad.html">
         <img class="ui large centered image" src="img\RadGrad.png">
         <div class="content">
           <div class="center aligned header"> RadGrad 2.0</div>
@@ -97,10 +106,8 @@
         </div>
         <div class="extra content">
           Software Engineering, Meteor, React
-          <a href="radgrad.html" class="ui bottom attached button">
-            MORE DETAILS</a>
         </div>
-      </div>
+      </a>
 
       <br/>
       <br/>
@@ -110,7 +117,13 @@
         </button></a>
     </div>
     </div>
+
+  <div class="push"></div>
+  <div class = "posts">
+    <div class = "ui container">
+      <h3 class="ui center aligned header">RECENT ESSAY</h3>
+
+    </div>
   </div>
-  
   <div class="push"></div>
 </body>
