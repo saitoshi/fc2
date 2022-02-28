@@ -7,17 +7,12 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-  <script src="menu.js"></script>
 </head>
 <style>
-
-.intro {
-    background-image: url("https://github.com/saitoshi/project-site/blob/master/src/components/images/project.png?raw=true");
+  .intro {
+    background-image: url("https://github.com/saitoshi/images/blob/main/index/project.png?raw=true");
     /* Set a specific height */
-    min-height: 400px;
+    min-height: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -28,13 +23,11 @@
   }
 
   .posts {
-    background-image: url(" https://github.com/saitoshi/project-site/blob/master/src/components/images/essay.png?raw=true");
     /* Set a specific height */
-    min-height: 400px;
-
+    height: 50%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-color: #cccccc;
+    background-color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,79 +44,124 @@
     <a href="jpn.html"><i class="folder icon"></i> 日本語</a>
     <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> MAIL</a>
   </div>
-  
-  <div id="main">
-    <div class="top_navbar">
-      <button class="openbtn" onclick="openNav()"><i class="align justify icon"></i></button>
-      <h2 class="ui inverted header">SHIN'S COLLECTION</h2>
-    </div>
-  </div>
+
+
+
+
   <div class="intro">
-
-    <div class="set-row">
-      <div class="set-column">
-        <br />
-        <img class="ui circular centered medium image" src="img\about.jpg">
-      </div>
-      <div class="set-column" style="text-align: center; margin:0 auto; ">
-        <div class="push"></div>
-        <h2 class="ui center aligned header">SHIN SAITO</h2>
-        <b>
-          <p>WORK MORE AND PLAY LESS
-        </b><br />
-        <b>LIVING LIFE TO THE FULLEST</p></b>
-      </div>
+    <button style="background-color: transparent;font-size: 20px;" onclick="openNav()"><i
+        class="align justify icon"></i></button>
+    <div class="center-screen">
+      <img class="ui circular centered medium image" src="img\about.jpg">
+      <h2 class="ui center aligned header"> SHUN ISEDA </h2>
     </div>
   </div>
-  <div class = "key-project">
-  <div class="ui container">
+  <div class="posts">
+    <div class="ui container">
+      <div class="set-row">
+        <div class="set-column">
+          <br />
+          <div class="slideshow-container" style="max-width: 50%; ">
+            <div class="mySlides fade">
+              <img src="https://github.com/saitoshi/images/blob/main/index/uhm_symbol.png?raw=true" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+
+              <img src="https://github.com/saitoshi/images/blob/main/index/ics.png?raw=true" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+
+              <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg"
+                style="width:100%">
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      
+      <div class="set-column" style="text-align: center; margin:0 auto; ">
+        <h2 style="text-align: center;">INTRODUCTION</h2>
+        <hr />
+        <p>I am a Japanese person who attended primary school in the United States. <br/>
+          I received my Bachelors of Science in <b>Computer Science and Mathematics</b> at the University of Hawaii at Manoa. <br/>
+          Currently, I am working as a software programmer and a English advisor. 
+        </p>
+        <div style="text-align: center;">
+          <a href="bio.html" class="large ui button">FOR RESUME</a>
+        </div>
+      </div>
+      </div>
+    </div>
     <br />
-    <h3 class="ui center aligned header">RECENT PROJECTS</h3>
-    <hr>
-    <div class="ui two cards">
-      <a class="ui centered card" href = "internaloha.html">
-        <img class="ui medium centered image"
-          src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
-        <div class="content">
-          <div class="center aligned header"> Internaloha</div>
-          <div class="center aligned meta"> 2021-12-10 </div>
-          <div class="description">
-            A scrapper for the RadGrad application where it extracts information for recent internships.
+  </div>
+  </div>
+  <div class="posts">
+    <div class="ui  container">
+      <div class="set-row">
+        <div class="set-column" style="text-align: center; margin:0 auto; ">
+          <h2 style="text-align: center;">CURRENT WORKS</h2>
+          <hr />
+          <p>Here are some projects I am currently working on.
+          </p>
+
+          <a class="ui centered fluid card" href="oshio.html">
+            <img class="ui medium centered image"
+              src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
+            <div class="content">
+              <div class="center aligned header"> Our Savior Revamped</div>
+              <div class="description">
+                A project on revamping the Our Savior Lutheran Church of Hawaii website to be more
+                suitable for the likes of the newer generation.
+              </div>
+            </div>
+            <div class="extra content">
+              HTML, CSS, Web Design
+            </div>
+          </a>
+          <div style="text-align: center;">
+            <a href="work.html" class="large ui button">PAST WORKS</a>
           </div>
         </div>
-        <div class="extra content">
-          Software Engineering, Scrapper, TypeScript
-        </div>
-      </a>
-      <a class="ui centered card" href = "radgrad.html">
-        <img class="ui large centered image" src="img\RadGrad.png">
-        <div class="content">
-          <div class="center aligned header"> RadGrad 2.0</div>
-          <div class="center aligned meta"> 2021-07-31 </div>
-          <div class="description">
-            A meteor based application in which ICS students at UH Manoa can use it as an undergraduate planner.
-          </div>
-        </div>
-        <div class="extra content">
-          Software Engineering, Meteor, React
-        </div>
-      </a>
+        <div class="set-column" style="display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 60%;
+              text-align: center;">
+          <br />
+          <br />
+          <img style="width: 70%; "
+            src="https://beep.co.jp/wp-content/themes/twentytwenty-child/images/common/ph_img_05.jpg">
 
-      <br/>
-      <br/>
-      <a href="work.html"><button class="ui right labeled icon button">
-          <i class="right arrow icon"></i>
-          MORE PROJECTS
-        </button></a>
-    </div>
-    </div>
 
-  <div class="push"></div>
-  <div class = "posts">
-    <div class = "ui container">
-      <h3 class="ui center aligned header">RECENT ESSAY</h3>
-
+        </div>
+      </div>
     </div>
   </div>
   <div class="push"></div>
 </body>
+
+
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="menu.js"></script>
+<script src="image.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+  $(document).ready(function () {
+    console.log("document loaded");
+  });
+
+  $(window).on("load", function () {
+    console.log("window loaded");
+  });
+</script>
