@@ -110,3 +110,11 @@ body {
 	text-align: center;
 	font-weight: bold;
 }
+.ui.container p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.ui.container b {
+    color: blue;
+}
