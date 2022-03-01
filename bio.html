@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/tab.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script src="js/menu.js"></script>
+  <script src="js/menu.js"></script>
 </head>
 
 <body>
@@ -30,155 +31,262 @@
   </div>
   <br />
   <h2 class="ui center aligned header">ABOUT</h2>
+  <hr />
+
+
+
   <div class="ui container">
-    <hr />
-    <div class="ui two column grid">
-      <div class="row">
-        <div class="column">
-          <img class="ui circular centered medium image" src="img\about.jpg">
-        </div>
-        <div class="column">
-          <ul>
-            <li>
-              <p><b>Bachelor of Science in Computer Science and Mathematics</b><br />
-                University of Hawaii at Manoa, Honolulu, HI<br />
-                Graduated in December 2021
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>I go by Shin or Shun</p>
-            </li>
-          </ul>
-          <h3 class="ui center aligned header">INTERESTS</h3>
-          <p>
-          <ul>
-            <li>Software Engineering</li>
-            <li>Japanese to English Translation</li>
-            <li>Data Analysis</li>
-            <li>Design and Story Telling</li>
-            <li>Education</li>
-          </ul>
-          </p>
-          <h3 class="ui center aligned header">SKILLS</h3>
-          <p>
-          <ul>
-            <li><b>Languages and Frameworks</b><br />
-              JavaScript, Python, C, HTML, CSS, Semantic UI
-            </li>
-            <li><b>Toolsets/OS</b><br />
-              MacOS, Git/GitHub, Windows, Intellij IDEA, Visual Studio Code
-            </li>
-            <li><b>Foreign Languages</b><br />
-              TOIEC Listen and Reading: 975 <br />
-              Japanese Language Proficiency Test: N1 and N2</li>
-          </ul>
-          </p>
-        </div>
-      </div>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen">English </button>
+      <button class="tablinks" onclick="openTab(event, 'Tokyo')">日本語</button>
     </div>
-    <h2 class="ui center aligned header">PROFESSIONAL EXPERIENCE</h2>
-    <hr />
-    <p>
-    <ul>
-      <li><b>Intro Level Software Engineer, <a href="https://beep.co.jp/">BEEP</a> </b><br />
-        December 2021 to Present <br />
-        Worked as a Software Engineer Intern at company BEEP located in Kamakura area.
-      </li>
-      <li><b>Research Assistant, <a href="https://csdl.ics.hawaii.edu/">Collaborative Software Development
-            Laboratory</a></b><br />
-        August to December 2021 <br />
-        Worked under Professor Johnson and Professor Moore on improving Internaloha.
-      </li>
-      <li><b>Mathematics Learning Assistant, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at
-            University of Hawaii at Manoa</a></b><br />
-        January 2019 to December 2021 <br />
-        Worked as an undergraduate Teaching Assistant for the math department at University of Hawaii at Manoa.
-        Helped with Calculus 1, 2, Differential Equation, and Precalculus related courses.
-        <ul>
-          <li>Fall 2021 - MATH 241 Calculus 1</li>
-          <li>Spring 2021 - MATH 302 Intro to Ordinary Differential Equations & MATH 140 Precalculus</li>
-          <li>Fall 2020 - MATH 241 Calculus 1 & MATH 140 Precalculus </li>
-          <li>Spring 2020 - MATH 242 Calculus 2 </li>
-          <li>Fall 2019 MATH 241 Calculus 1</li>
-          <li>Spring 2019 - MATH 242 Calculus 2 </li>
-        </ul>
-      </li>
-      <li><b>Media and Event Assistant, University of Hawaii at Manoa Office of Provost</b><br />
-        June 2020 to December 2021 <br />
-        Assisted the Better Tomorrow Speaker Series team by updating its website, social media, and providing the
-        technical support for Zoom Webinars.
-      </li>
-      <li><b>Summer Research Assitant, <a href="https://csdl.ics.hawaii.edu/">RadGrad NSF Research Experience for
-            Undergraduates Program</a></b>
-        <br />
-        May 2021 to August 2021 <br />
-        Worked under the supervision of Dr. Johnson and Dr. Moore on upgrading RadGrad based on student feedback.
-      </li>
-      <li><b>Research Assistant, <a href="http://olesonlab.org/">Oleson Lab at University of Hawaii at
-            Manoa</a></b><br />
-        May 2020 to April 2021 <br />
-        Worked under Professor Oleson, as a data analyst for a research program centering around the waste water usage
-        in the islands of Oahu and Maui. </li>
-      <li><b>Tutor and Grader, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at University of
-            Hawaii at Manoa</a></b><br />
-        August 2019 to December 2020 <br />
-        Tutored introductory mathematics courses at the Learning Emporium Center and graded for 300 level math courses.
-      </li>
-      <li><b>Japanese and English Translator, University of Hawaii TIM Department</b><br />
-        January 2019 to June 2020<br />
-        A Japanese to English and vice versa tranlator position for the TIM department.
-      </li>
-    </ul>
-    </p>
-    <h2 class="ui center aligned header">RELATED COURSEWORK</h2>
-    <hr />
-    <div class="ui two column grid">
-      <div class="row">
-        <div class="column">
-          <ul>
-            <li> <a href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-311-algorithms-4/">ICS 311 -
-                Algorithms</a></li>
-            <li> ICS 314 - Software Engineering I</li>
-            <li> <a
-                href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-312-machine-level-and-systems-programming-3/">ICS
-                312 - Machine Level and System Programming</a></li>
-            <li> <a href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-313-programming-language-theory-3/"> ICS
-                313 - Programming Language Theory</a></li>
-            <li> ICS 321 - Database System I</li>
-            <li> ICS 332 - Operating System</li>
-            <li> ICS 390 - Computing Ethics for Lab Assistants</li>
-            <li> ICS 414 - Software Engineering II</li>
-            <li> ICS 426 - Computer System Security</li>
-            <li> ICS 427 - Software Quality Assurance</li>
-            <li> ICS 435 - Machine Learning</li>
-            <li> ICS 469 - Cognitive Science</li>
-            <li> JPN 402 - Fourth Year in Japanese II</li>
-            <li> JPN 403 - Fourth-Year Japanese for Advanced Speakers I</li>
-            <li> JPN 421 - Japanese Composition</li>
-            <li> JPN 425 - Japanese to English Translation</li>
-          </ul>
+
+    <div id="London" class="tabcontent">
+      <div class="ui container">
+        <div class="ui two column grid">
+          <div class="row">
+            <div class="column">
+              <img class="ui circular centered medium image" src="img\about.jpg">
+            </div>
+            <div class="column">
+              <ul>
+                <li>
+                  <p><b>Bachelor of Science in Computer Science and Mathematics</b><br />
+                    University of Hawaii at Manoa, Honolulu, HI<br />
+                    Graduated in December 2021
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <p>I go by Shin or Shun</p>
+                </li>
+              </ul>
+              <h3 class="ui center aligned header">INTERESTS</h3>
+              <p>
+              <ul>
+                <li>Software Engineering</li>
+                <li>Japanese to English Translation</li>
+                <li>Data Analysis</li>
+                <li>Design and Story Telling</li>
+                <li>Education</li>
+              </ul>
+              </p>
+              <h3 class="ui center aligned header">SKILLS</h3>
+              <p>
+              <ul>
+                <li><b>Languages and Frameworks</b><br />
+                  JavaScript, Python, C, HTML, CSS, Semantic UI
+                </li>
+                <li><b>Toolsets/OS</b><br />
+                  MacOS, Git/GitHub, Windows, Intellij IDEA, Visual Studio Code
+                </li>
+                <li><b>Foreign Languages</b><br />
+                  TOIEC Listen and Reading: 975 <br />
+                  Japanese Language Proficiency Test: N1 and N2</li>
+              </ul>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="column">
-          <ul>
-            <li> MATH 301 - Discrete Mathematics</li>
-            <li> MATH 302 - Introduction to Differential Equations</li>
-            <li> MATH 304 - Mathematical Modeling: Deterministic Models</li>
-            <li> MATH 307 - Linear Algebra and Differential Equations</li>
-            <li> MATH 321 - Introduction to Advanced Mathematics</li>
-            <li> MATH 331 - Real Analysis</li>
-            <li> MATH 372 - Probablity and Statistics</li>
-            <li> MATH 402 - Partial Differential Equations I</li>
-            <li> MATH 411 - Linear Algebra</li>
-            <li> MATH 412 - Abstract Algebra I</li>
-            <li> MATH 442 - Vector Analysis</li>
-          </ul>
+        <h2 class="ui center aligned header">PROFESSIONAL EXPERIENCE</h2>
+        <hr />
+        <p>
+        <ul>
+          <li><b>Intro Level Software Engineer, <a href="https://beep.co.jp/">BEEP</a> </b><br />
+            December 2021 to Present <br />
+            Worked as a Software Engineer Intern at company BEEP located in Kamakura area.
+          </li>
+          <li><b>Research Assistant, <a href="https://csdl.ics.hawaii.edu/">Collaborative Software Development
+                Laboratory</a></b><br />
+            August to December 2021 <br />
+            Worked under Professor Johnson and Professor Moore on improving Internaloha.
+          </li>
+          <li><b>Mathematics Learning Assistant, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at
+                University of Hawaii at Manoa</a></b><br />
+            January 2019 to December 2021 <br />
+            Worked as an undergraduate Teaching Assistant for the math department at University of Hawaii at Manoa.
+            Helped with Calculus 1, 2, Differential Equation, and Precalculus related courses.
+            <ul>
+              <li>Fall 2021 - MATH 241 Calculus 1</li>
+              <li>Spring 2021 - MATH 302 Intro to Ordinary Differential Equations & MATH 140 Precalculus</li>
+              <li>Fall 2020 - MATH 241 Calculus 1 & MATH 140 Precalculus </li>
+              <li>Spring 2020 - MATH 242 Calculus 2 </li>
+              <li>Fall 2019 MATH 241 Calculus 1</li>
+              <li>Spring 2019 - MATH 242 Calculus 2 </li>
+            </ul>
+          </li>
+          <li><b>Media and Event Assistant, University of Hawaii at Manoa Office of Provost</b><br />
+            June 2020 to December 2021 <br />
+            Assisted the Better Tomorrow Speaker Series team by updating its website, social media, and providing the
+            technical support for Zoom Webinars.
+          </li>
+          <li><b>Summer Research Assitant, <a href="https://csdl.ics.hawaii.edu/">RadGrad NSF Research Experience for
+                Undergraduates Program</a></b>
+            <br />
+            May 2021 to August 2021 <br />
+            Worked under the supervision of Dr. Johnson and Dr. Moore on upgrading RadGrad based on student feedback.
+          </li>
+          <li><b>Research Assistant, <a href="http://olesonlab.org/">Oleson Lab at University of Hawaii at
+                Manoa</a></b><br />
+            May 2020 to April 2021 <br />
+            Worked under Professor Oleson, as a data analyst for a research program centering around the waste water
+            usage
+            in the islands of Oahu and Maui. </li>
+          <li><b>Tutor and Grader, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at University of
+                Hawaii at Manoa</a></b><br />
+            August 2019 to December 2020 <br />
+            Tutored introductory mathematics courses at the Learning Emporium Center and graded for 300 level math
+            courses.
+          </li>
+          <li><b>Japanese and English Translator, University of Hawaii TIM Department</b><br />
+            January 2019 to June 2020<br />
+            A Japanese to English and vice versa tranlator position for the TIM department.
+          </li>
+        </ul>
+        </p>
+        <h2 class="ui center aligned header">RELATED COURSEWORK</h2>
+        <hr />
+        <div class="ui two column grid">
+          <div class="row">
+            <div class="column">
+              <ul>
+                <li> <a href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-311-algorithms-4/">ICS 311 -
+                    Algorithms</a></li>
+                <li> ICS 314 - Software Engineering I</li>
+                <li> <a
+                    href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-312-machine-level-and-systems-programming-3/">ICS
+                    312 - Machine Level and System Programming</a></li>
+                <li> <a href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-313-programming-language-theory-3/">
+                    ICS
+                    313 - Programming Language Theory</a></li>
+                <li> ICS 321 - Database System I</li>
+                <li> ICS 332 - Operating System</li>
+                <li> ICS 390 - Computing Ethics for Lab Assistants</li>
+                <li> ICS 414 - Software Engineering II</li>
+                <li> ICS 426 - Computer System Security</li>
+                <li> ICS 427 - Software Quality Assurance</li>
+                <li> ICS 435 - Machine Learning</li>
+                <li> ICS 469 - Cognitive Science</li>
+                <li> JPN 402 - Fourth Year in Japanese II</li>
+                <li> JPN 403 - Fourth-Year Japanese for Advanced Speakers I</li>
+                <li> JPN 421 - Japanese Composition</li>
+                <li> JPN 425 - Japanese to English Translation</li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li> MATH 301 - Discrete Mathematics</li>
+                <li> MATH 302 - Introduction to Differential Equations</li>
+                <li> MATH 304 - Mathematical Modeling: Deterministic Models</li>
+                <li> MATH 307 - Linear Algebra and Differential Equations</li>
+                <li> MATH 321 - Introduction to Advanced Mathematics</li>
+                <li> MATH 331 - Real Analysis</li>
+                <li> MATH 372 - Probablity and Statistics</li>
+                <li> MATH 402 - Partial Differential Equations I</li>
+                <li> MATH 411 - Linear Algebra</li>
+                <li> MATH 412 - Abstract Algebra I</li>
+                <li> MATH 442 - Vector Analysis</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+
+    <div id="Tokyo" class="tabcontent">
+      <div class="ui container">
+        <div class="ui two column grid">
+          <div class="row">
+            <div class="column">
+              <img class="ui circular centered medium image" src="img\about.jpg">
+            </div>
+            <div class="column">
+              <ul>
+                <li>TOEIC： 975点</li>
+                <li>JLPT: N1 N2</li>
+                <li>ハワイ大学マノア校<br />
+                  数学とコンピューターサイエンスダブル専攻</li>
+              </ul>
+              <h3 class="ui center aligned header">INTERESTS</h3>
+              <p>
+              <ul>
+                <li>ソフトウェアエンジニア</li>
+                <li>日英通訳・翻訳</li>
+                <li>データーサイエンス</li>
+                <li>イラスト・デザイン</li>
+              </ul>
+              </p>
+              <h3 class="ui center aligned header">SKILLS</h3>
+              <p>
+              <ul>
+                <li><b>主な言語とフレームワーク</b><br />
+                  JavaScript, Python, C, HTML, CSS, Semantic UI
+                </li>
+                <li><b>基本使用のツールとOS</b><br />
+                  MacOS, Git/GitHub, Windows, Intellij IDEA, Visual Studio Code
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="ui center aligned header">PROFESSIONAL EXPERIENCE</h2>
+        <hr />
+        <p>
+        <ul>
+          <li><b>リサーチアシスタント・Collaborative Software Development Laboratory</b><br />
+            21年8月～21年12月 <br />
+            インターアロハと言う学生向けインターン探しアルバイトアプリの開発チームでVersion 2のプログラムやコードを作成。
+          </li>
+          <li><b>Mathematics Learning Assistant・ハワイ大学マノア校</b><br />
+            19年1月～21年12月<br />
+            ハワイ大学マノア校で数学の授業をアシスタント講師として担当しました。
+          </li>
+          <li><b>Media and Event Assistant・ハワイ大学マノア校</b><br />
+            June 2020 to December 2021 <br />
+            Assisted the Better Tomorrow Speaker Series team by updating its website, social media, and providing the
+            technical support for Zoom Webinars.
+          </li>
+          <li><b>Summer Research Assitant, RadGrad NSF Research Experience for Undergraduates program</b>
+            <br />
+            21年5月～21年7月 <br />
+            RadGradと言う学生向けアプリのバージョン2の作成チームをインターンとして参加しました。
+          </li>
+          <li><b>リサーチアシスタント・ハワイ大学マノア校</b><br />
+            May 2020 to April 2021 <br />
+            データーアナリストとしてハワイのオアフ島とマウイ島の水利用のデーター管理を担当しました。 </li>
+          <li><b>Tutor and Grader, University of Hawaii at Manoa, Mathematics Department</b><br />
+            August 2019 to December 2020 <br />
+            ハワイ大学マノア学校の学生用のアシスタントルームでチューターとしてアルバイトをしました・
+          </li>
+          <li><b>日英通訳士,・ハワイ大学マノア校旅行産業経営学部</b><br />
+            19年1月～20年2月<br />
+            ハワイ大学マノア校旅行産業経営学部で日本語から英語の通訳を担当。
+          </li>
+        </ul>
+        </p>
+  
+      </div>
+    </div>
 
   </div>
 
+  </div>
+
+  <div class="push"></div>
 </body>
-</body>
+<script src="js/tab.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+  $(document).ready(function () {
+    console.log("document loaded");
+  });
+
+  $(window).on("load", function () {
+    console.log("window loaded");
+  });
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
