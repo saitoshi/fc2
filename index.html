@@ -34,6 +34,15 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  #navbar {
+  background-color: transparent;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 1;
+}
 </style>
 
 <body>
@@ -48,11 +57,13 @@
   </div>
 
 
-
+  
 
   <div class="intro">
-    <button style="background-color: transparent;font-size: 20px;" onclick="openNav()"><i
-        class="align justify icon"></i></button>
+    <div id="navbar">
+      <button style="background-color: transparent;font-size: 30px; transition: top 0.3s; /* Transition effect when sliding down (and up) */" onclick="openNav()"><i
+          class="align justify icon"></i></button>
+        </div>
     <div class="center-screen">
       <img class="ui circular centered medium image" src="img\about.jpg">
       <h2 class="ui center aligned header"> SHUN ISEDA </h2>
@@ -156,6 +167,19 @@
 <script src="js/menu.js"></script>
 <script src="js/image.js"></script>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+  </script>
+  
 <script>
   $(document).ready(function () {
     console.log("document loaded");
