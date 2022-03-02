@@ -118,3 +118,12 @@ body {
 .ui.container b {
     color: blue;
 }
+#navbar {
+	background-color: transparent;
+	position: fixed;
+	top: -1px;
+	width: 100%;
+	display: block;
+	transition: top 0.3s;
+	z-index: 1;
+  }
