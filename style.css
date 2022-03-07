@@ -29,17 +29,7 @@
 	  text-align: center;
 	  min-height: 100vh;
 	}
-	.column {
-	  float: left;
-	  width: 50%;
-	}
-	
-	/* Clear floats after the columns */
-	.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
+
   
 	.p {
 		font-family: 'Courier New', Courier, monospace;
