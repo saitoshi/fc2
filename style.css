@@ -1,137 +1,103 @@
-body {
-	font-family: "Lato", sans-serif;
-  }
-  .top_navbar{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 50px;
-	background: blue;
-	box-shadow: 1px 0 2px rgba(0,0,0,0.125);
-	display: flex;
-	align-items: center;
-   }
-
-  .sidebar {
-	height: 100%;
-	width: 0;
+.navbar {
+	overflow: hidden;
+	background-color: blue;
 	position: fixed;
+	top: 0;
+	width: 100%;
 	z-index: 2;
-	top: 0;
-	left: 0;
-	background-color: blue;
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 40px;
   }
   
-  .sidebar a {
-	padding: 8px 8px 8px 32px;
+  .navbar a {
+	float: right;
+	display: block;
+	color: #f2f2f2;
 	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 25px;
-	color: white;
-	display: block;
-	transition: 0.3s;
+	font-size: 17px;
   }
   
-  .sidebar a:hover {
-	color: cyan;
+  .navbar a:hover {
+	background: #ddd;
+	color: black;
   }
+	 .center-screen {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
+	  min-height: 100vh;
+	}
+	.column {
+	  float: left;
+	  width: 50%;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
   
-  .sidebar .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-  }
-  
-  .openbtn {
-	font-size: 20px;
-	cursor: pointer;
-	background-color: blue;
-	color: white;
-	padding: 10px 15px;
-	border: none;
-  }
-  
-  .openbtn:hover {
-	background-color: cyan;
-  }
-  
-  #main {
-	transition: margin-left .5s;
-	padding: 16px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-	.sidebar {padding-top: 15px;}
-	.sidebar a {font-size: 18px;}
-  }
-
-  .center-screen {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	min-height: 100vh;
-  }
-
-  .push {
-	height: 10px;
-  }
-  
-  .set-row {
-    display: flex;
-  }
-
-  .set-column {
-    flex: 50%;
-    padding: 10px;
-    height: 300px;
-  }
-  .title {
-	padding:0;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
-  }
-
-  span.bold-list {
-	font-weight: bold;
-	color: blue;
-  }
-
-.comment {
-	color: blue;
-	text-align: center;
-	font-weight: bold;
-}
-.ui.container p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
-
-.ui.container b {
-    color: blue;
-}
-#navbar {
-	background-color: transparent;
-	position: fixed;
-	top: -1px;
-	width: 100%;
-	display: block;
-	transition: top 0.3s;
-	z-index: 1;
-  }
-
-  #socialmedia {
-	display: inline-flex;
+	.p {
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 18px;;
+	}
+	.sidebar {
+	  height: 100%;
+	  width: 0;
 	  position: fixed;
-	  bottom: 15px;
+	  z-index: 5;
+	  top: 0;
+	  left: 0;
+	  background-color: blue;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 40px;
+	  }
+	  
+	  .sidebar a {
+	  padding: 8px 8px 8px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  font-size: 25px;
 	  color: white;
-  }
+	  display: block;
+	  transition: 0.3s;
+	  }
+	  
+	  .sidebar a:hover {
+	  color: cyan;
+	  }
+	  
+	  .sidebar .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	  margin-left: 50px;
+	  }
+	  
+	  .openbtn {
+	  font-size: 20px;
+	  cursor: pointer;
+	  background-color: blue;
+	  color: white;
+	  padding: 10px 15px;
+	  border: none;
+	  }
+	  
+	  .openbtn:hover {
+	  background-color: cyan;
+	  }
+	  
+	@media screen and (max-width: 600px) {
+	  .column {
+		width: 100%;
+	  }
+  
+	  .sidebar {padding-top: 15px;}
+	  .sidebar a {font-size: 18px;}
+	}
