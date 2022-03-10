@@ -1,0 +1,51 @@
+.filterDiv {
+  text-align: center;
+  display: none;
+  transition: 0.3s;
+  max-width: 25%;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  
+  }
+
+  .projectInfo {
+    padding: 2px 16px;
+  }
+  
+.show {
+    display: block;
+}
+
+.filterBtnContainer {
+    padding-left: 60px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.filterBtn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.filterBtn :hover {
+    background-color: #ddd;
+}
+
+.filterBtn.active {
+  background-color: #666;
+  color: white;
+}
+
+ /* Smartphones (portrait and landscape) ----------- */
+ @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .filterDiv {
+    max-width: 50%;
+  }
+  .ui.centered.card {
+    max-width: 75%;
+  }
+ }
+
