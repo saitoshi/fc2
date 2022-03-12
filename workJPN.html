@@ -37,9 +37,9 @@
     </div>
     <div class="push"></div>
     <h2 class="ui center aligned header">WORKS</h2>
-    <div class = "ui text container" style="text-align: center">
+    <div class="ui text container" style="text-align: center">
         <b>Here are some projects I have done.</b>
-        </div>
+    </div>
     <div class="ui container">
         <div id="filterBtnContainer">
             <button class="filterBtn active" onclick="filterSelection('all')"> Show all</button>
@@ -48,64 +48,186 @@
             <button class="filterBtn" onclick="filterSelection('translation')">Translation</button>
         </div>
     </div>
-  
+
     <br />
     <div class="ui container">
-       
+
         <div class="ui two cards">
             <div class="filterDiv webDesign">
-                <a class="ui centered card" href="oshio.html">
+                <div class="ui centered card" href="oshio.html">
                     <img class="ui medium centered image"
                         src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
                     <div class="content">
                         <div class="center aligned header"> Our Savior Revamped</div>
                         <div class="center aligned meta"> Ongoing </div>
-                        <div class="description">
-                            A project on revamping the Our Savior Lutheran Church of Hawaii website to be more suitable
-                            for the likes
-                            of
-                            the newer generation.
-                        </div>
                     </div>
                     <div class="extra content">
                         Web Design
+                        <button class="modal-button" href="#myModal1">詳しく見る</button>
                     </div>
-                </a>
+                </div>
+                <!-- The Modal -->
+                <div id="myModal1" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+
+                        <span class="close">×</span>
+                        <h2 style="text-align: center;">Our Savior Hawaii サイト</h2>
+                        <hr>
+
+
+                        <div class="modal-body">
+                            <div class="modal-col1">
+                                <p>ハワイにある教会のサイトを現代へ合わせたサイトへの更新。例えば、デスクトップ版では動く
+                                    背景があり、スマホ版では通常背景。左側にサイドメニューの追加などをしました。
+
+                                </p>
+
+                                <a href="https://oshi0-website.github.io/oshi0-website/"><i
+                                        class="play icon"></i>Demo</a><br />
+                                <a href="https://github.com/oshi0-website/oshi0-website"><i
+                                        class="github icon"></i>GitHub</a>
+                                <h3 style="text-align: center;">使用言語</h3>
+
+                                HTML, CSS, JavaScript
+                            </div>
+                            <div class="modal-col2">
+                                <div style="text-align: center;">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
             <div class="filterDiv cs">
-                <a class="ui centered card" href="internaloha.html">
+                <div class="ui centered card" href="internaloha.html">
                     <img class="ui small centered image"
                         src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
                     <div class="content">
                         <div class="center aligned header"> Internaloha</div>
                         <div class="center aligned meta"> 2021-12-10 </div>
-                        <div class="description">
-                            A scrapper application that extracts info for internships.
-                        </div>
                     </div>
                     <div class="extra content">
                         Software Engineering
+                        <button class="modal-button" href="#internaloha">詳しく見る</button>
                     </div>
-                </a>
+                </div>
+
+                <!-- The Modal -->
+                <div id="internaloha" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+
+                        <span class="close">×</span>
+                        <h2 style="text-align: center;">Internaloha</h2>
+                        <hr>
+
+
+                        <div class="modal-body">
+                            <div class="ui two column grid">
+                                <div class="row">
+                                    <div class="column">
+                                        <p>ハワイ大学のアプリ用のインターンなどを検索するスクレーパーファンクションをTypeScriptとNode.jsなどで開発。
+                                            Indeed, Apple,などの仕事探しのサイトから重要な情報をJSONファイルへ書き、それをハワイ大学の学生専用アプリに転送。<br />
+                                            このアプリの一番の目標はで学生の目標に合うインターンや仕事探しの時間を減らすことです。
+                                        </p>
+                                        <div style = "text-align: left;">
+                                        <a href="https://internaloha.github.io/documentation/"><i
+                                                class="play icon"></i>Documentation</a><br />
+                                        <a href="https://github.com/internaloha/scrapers"><i
+                                                class="github icon"></i>GitHub</a>
+                                            </div>
+                                            <br/>
+                                        <h3 style="text-align: center;">使用言語</h3>
+
+                                        TypeScript, Node.js, React
+
+                                    </div>
+                                    <div class="column">
+                                        <img class="ui medium centered image" src = "https://raw.githubusercontent.com/saitoshi/images/main/internaloha/radgrad.png">
+                                        <div class = "comment">Internalohaが各サイトから抜き取ったインターン情報。                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
             <div class="filterDiv cs">
-                <a class="ui centered card" href="radgrad.html">
+                <div class="ui centered card" href="radgrad.html">
                     <img class="ui small centered image"
                         src="https://github.com/saitoshi/images/blob/main/radgradtask/RadGrad.png?raw=true">
                     <div class="content">
                         <div class="center aligned header"> RadGrad 2.0</div>
                         <div class="center aligned meta"> 2021-07-31 </div>
-                        <div class="description">
-                            A meteor based application in which ICS students at UH Manoa can use it as an undergraduate
-                            planner.
-                        </div>
                     </div>
                     <div class="extra content">
-                        Software Engineering, Meteor, React
+                        Software Engineering
+                        <button class="modal-button" href="#radgrad">詳しく見る</button>
                     </div>
-                </a>
+                </div>
+                <div id="radgrad" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+
+                        <span class="close">×</span>
+                        <h2 style="text-align: center;">RadGrad</h2>
+                        <hr>
+
+
+                        <div class="modal-body">
+                            <div class="ui two column grid">
+                                <div class="row">
+                                    <div class="column">
+                                        <p>ハワイ大学の学生向けのアプリで、生徒個別の目標に合わせて大学の4年のうちに受けるおすすめな授業やインターンをまとめたアプリです。
+                                            例えば、ゲームデザイナー志望の生徒に合わせたおすすめな授業やインターンを何年生のうちに受けるかなどがわかります。
+                                        </p>
+                                        <div style = "text-align: left;">
+                                        <a href="https://www.radgrad.org/%22%7D"><i
+                                                class="play icon"></i>Documentation</a><br />
+                                        <a href="https://github.com/radgrad/radgrad2"><i
+                                                class="github icon"></i>GitHub</a>
+                                            </div>
+                                            <br/>
+                                        <h3 style="text-align: center;">使用言語</h3>
+
+                                        TypeScript, Node.js, React
+
+                                    </div>
+                                    <div class="column">
+                                        <img class="ui big centered image" src = "https://github.com/saitoshi/images/blob/main/radgradtask/week3.gif?raw=true">
+                                        <div class = "comment">RadGradのアプリのサンプルGIF                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
             </div>
 
             <div class="filterDiv cs">

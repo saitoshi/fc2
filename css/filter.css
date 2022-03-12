@@ -56,12 +56,39 @@
 
 /* Modal Content */
 .modal-content {
+  color: black;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
+
+.modal-col {
+  text-align: left;
+  float: left;
+}
+
+.modal-left {
+  width:25%
+}
+
+.modal-right {
+  width: 75%;
+}
+.modal-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.modal-col p {
+  font: 14px;
+}
+
+.modal-col a {
+  color: blue;
+}
+
 
 /* The Close Button */
 .close {
