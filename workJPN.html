@@ -2,26 +2,15 @@
 <html>
 
 <head>
-    <title>Shun | Works </title>
+    <title>Iseda | Works </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/filter.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 
 </head>
 
@@ -48,9 +37,9 @@
     </div>
     <div class="push"></div>
     <h2 class="ui center aligned header">WORKS</h2>
-    <div class="ui text container" style="text-align: center">
-        <b>腕によりをかけて制作した、愛すべき成果物たちをご紹介します。</b>
-    </div>
+    <div class = "ui text container" style="text-align: center">
+        <b>Here are some projects I have done.</b>
+        </div>
     <div class="ui container">
         <div id="filterBtnContainer">
             <button class="filterBtn active" onclick="filterSelection('all')"> Show all</button>
@@ -59,81 +48,46 @@
             <button class="filterBtn" onclick="filterSelection('translation')">Translation</button>
         </div>
     </div>
-
+  
     <br />
     <div class="ui container">
-
+       
         <div class="ui two cards">
-
             <div class="filterDiv webDesign">
-                <div class="ui centered card" href="oshio.html">
+                <a class="ui centered card" href="oshio.html">
                     <img class="ui medium centered image"
                         src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
                     <div class="content">
-                        <div class="center aligned header"> Our Savior Hawaii サイト更新</div>
+                        <div class="center aligned header"> Our Savior Revamped</div>
                         <div class="center aligned meta"> Ongoing </div>
+                        <div class="description">
+                            A project on revamping the Our Savior Lutheran Church of Hawaii website to be more suitable
+                            for the likes
+                            of
+                            the newer generation.
+                        </div>
                     </div>
                     <div class="extra content">
                         Web Design
-                        <br />
-                        <button class="modal-button" href="#myModal1">Join Project</button>
-                        <div id="myModal1" class="modal">
-
-                            <!-- Modal content -->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <span class="close">×</span>
-                                    <h2>Modal Header</h2>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the Modal Body</p>
-                                    <p>Some other text...</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="filterDiv cs">
-                <div class="ui centered card" href="internaloha.html">
+                <a class="ui centered card" href="internaloha.html">
                     <img class="ui small centered image"
                         src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
                     <div class="content">
                         <div class="center aligned header"> Internaloha</div>
                         <div class="center aligned meta"> 2021-12-10 </div>
                         <div class="description">
-                            ハワイ大学の学生向けアプリのスクレーパーファンクション。
+                            A scrapper application that extracts info for internships.
                         </div>
                     </div>
                     <div class="extra content">
                         Software Engineering
-                        <button class="modal-button" href="#myModal2">Join Project</button>
-                        <!-- The Modal -->
-                        <div id="myModal2" class="modal">
-
-                            <!-- Modal content -->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <span class="close">×</span>
-                                    <h2>Modal Header</h2>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the Modal Body</p>
-                                    <p>Some other text...</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="filterDiv cs">
@@ -144,12 +98,12 @@
                         <div class="center aligned header"> RadGrad 2.0</div>
                         <div class="center aligned meta"> 2021-07-31 </div>
                         <div class="description">
-                            ハワイ大学向けアプリで学生が4年間を有効的にプランとマネージメントを出来るようにする。
-                            <div class="push"></div>
+                            A meteor based application in which ICS students at UH Manoa can use it as an undergraduate
+                            planner.
                         </div>
                     </div>
                     <div class="extra content">
-                        Software Engineering
+                        Software Engineering, Meteor, React
                     </div>
                 </a>
             </div>
@@ -181,7 +135,9 @@
                         <div class="center aligned header">Shocking Emissions</div>
                         <div class="center aligned meta">2021-05-04</div>
                         <div class="description">
-                            ハワイの電気会社に契約しているお客さんが日頃より使用しているCO2を計算が出来るアプリ。
+                            A Meteor-Based application in which customers of Hawaiian Electric Industries can see how
+                            much green house
+                            gases they burn in their daily transportations.
                         </div>
                     </div>
                     <div class="extra content">
@@ -216,7 +172,8 @@
                         <div class="header"> UH Manoa Math Review Website </div>
                         <div class="center aligned meta"> 2020-06-01 </div>
                         <div class="description">
-                            コロナの駅
+                            A review website where college students can study or prepare for Math courses offered at UH
+                            Manoa. <br />
                             <br />
                         </div>
                     </div>
@@ -234,7 +191,7 @@
                         <div class="center aligned header">Textbook Hunt </div>
                         <div class="center aligned meta"> 2020-05-15 </div>
                         <div class="description">
-                            学生向けアプリで学生同士が教科書を売れるようにするアプリ。
+                            A meteor and react based application where students can sell used textbooks to others.
                         </div>
                     </div>
                     <div class="extra content">
