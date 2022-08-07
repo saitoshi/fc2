@@ -14,196 +14,147 @@
 </head>
 
 <body>
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="index.html"><i class="home icon"></i> HOME</a>
-    <a href="bio.html"><i class="user circle outline icon"></i> ABOUT</a>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
     <a href="work.html"><i class="file outline icon"></i> WORKS</a>
-    <a href="https://saitoshiniseda45.fc2.net/" target="_blank"><i class="pencil alternate icon"></i> BLOG</a>
-    <a href="jpn.html"><i class="folder icon"></i> 日本語</a>
-    <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> MAIL</a>
+    <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
+    <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+    <a href="jpn.html" class="bottom">日本語</a>
   </div>
-  <div class="navbar">
-    <button
-      style="border: 0 !important;color: white; background-color: transparent;font-size: 17px; transition: top 0.3s; /* Transition effect when sliding down (and up) */  padding: 14px 16px;"
-      onclick="openNav()"><i class="align justify icon"></i></button>
-    <a href="index.html">HOME</a>
-    <a href="bio.html">ENGLISH</a>
-    <a href="bioJPN.html">日本語</a>
-  </div>
-  <div class="push"></div>
-  <h2 class="ui center aligned header">ABOUT</h2>
+
+
+  <div id="main">
+    <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
+    <div class="push"></div>
+    <h2 class="ui center aligned header">ABOUT</h2>
 
 
 
 
-  <div class="ui container">
-    <hr />
     <div class="ui container">
-      <div class="ui two column grid">
-        <div class="row">
-          <div class="column">
-            <img class="ui circular centered medium image" src="img\about.jpg">
-          </div>
-          <div class="column">
-            <ul>
-              <li>
-                <p><b>Bachelor of Science in Computer Science and Mathematics</b><br />
-                  University of Hawaii at Manoa, Honolulu, HI<br />
-                  Graduated in December 2021
-                </p>
-              </li>
-              <br />
-              <li>
-                <p>I go by Shin or Shun</p>
-              </li>
-            </ul>
-            <h3 class="ui center aligned header">INTERESTS</h3>
-            <p>
-            <ul>
-              <li>Software Engineering</li>
-              <li>Japanese to English Translation</li>
-              <li>Data Analysis</li>
-              <li>Design and Story Telling</li>
-              <li>Education</li>
-            </ul>
-            </p>
-            <h3 class="ui center aligned header">SKILLS</h3>
-            <p>
-            <ul>
-              <li><b>Languages and Frameworks</b><br />
-                JavaScript, Python, C, HTML, CSS, Semantic UI
-              </li>
-              <li><b>Toolsets/OS</b><br />
-                MacOS, Git/GitHub, Windows, Intellij IDEA, Visual Studio Code
-              </li>
-              <li><b>Foreign Languages</b><br />
-                TOIEC Listen and Reading: 975 <br />
-                Japanese Language Proficiency Test: N1 and N2</li>
-            </ul>
-            </p>
+      <hr />
+      <div class="ui container">
+        <div class="ui two column grid">
+          <div class="row">
+            <div class="column">
+              <img class="ui circular centered medium image" src="img\about.jpg">
+            </div>
+            <div class="column">
+              <ul>
+                <li>
+                  <p><b>Bachelor of Science in Computer Science and Mathematics</b><br />
+                    University of Hawaii at Manoa, Honolulu, HI<br />
+                    Graduated in December 2021
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <p>I go by Shin or Shun</p>
+                </li>
+              </ul>
+              <h3 class="ui center aligned header">INTERESTS</h3>
+              <p>
+              <ul>
+                <li>Software Engineering</li>
+                <li>Japanese to English Translation</li>
+                <li>Data Analysis</li>
+                <li>Design and Story Telling</li>
+                <li>Education</li>
+              </ul>
+              </p>
+              <h3 class="ui center aligned header">SKILLS</h3>
+              <p>
+              <ul>
+                <li><b>Languages and Frameworks</b><br />
+                  JavaScript, Python, C, HTML, CSS, Semantic UI
+                </li>
+                <li><b>Toolsets/OS</b><br />
+                  MacOS, Git/GitHub, Windows, Intellij IDEA, Visual Studio Code
+                </li>
+                <li><b>Foreign Languages</b><br />
+                  TOIEC Listen and Reading: 975 <br />
+                  Japanese Language Proficiency Test: N1 and N2</li>
+              </ul>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <h2 class="ui center aligned header">PROFESSIONAL EXPERIENCE</h2>
-      <hr />
-      <p>
-      <ul>
-        <li><b>Research Assistant, Ogata Lab at Kyoto University </b><br />
-          April 2022 to Present</li>
-        <li><b>Translator and Part-Time Engineer, <a href="https://clovertech.jp/">CloverTech</a></b> <br />
-          March 2022 to Present <br />
-          I worked as a English to Japanese and vice versa translator and interpreter and as a part time engineer
-          assisting with on going side project with clients.</li>
-        <li><b>Front End App Developer, <a href="https://www.snappy.in.net">Snappy INC.</a></b><br />
-          March 2022 to Present <br />
-          Worked as a Front End App Developer on an app called Snappy. </li>
-        <li><b>Intro Level Software Engineer, <a href="https://beep.co.jp/">BEEP</a> </b><br />
-          December 2021 to Present <br />
-          Worked as a Software Engineer Intern at company BEEP located in Kamakura area.
-        </li>
-        <li><b>Research Assistant, <a href="https://csdl.ics.hawaii.edu/">Collaborative Software Development
-              Laboratory</a></b><br />
-          August to December 2021 <br />
-          Worked under Professor Johnson and Professor Moore on improving Internaloha.
-        </li>
-        <li><b>Mathematics Learning Assistant, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at
-              University of Hawaii at Manoa</a></b><br />
-          January 2019 to December 2021 <br />
-          Worked as an undergraduate Teaching Assistant for the math department at University of Hawaii at Manoa.
-          Helped with Calculus 1, 2, Differential Equation, and Precalculus related courses.
-          <ul>
-            <li>Fall 2021 - MATH 241 Calculus 1</li>
-            <li>Spring 2021 - MATH 302 Intro to Ordinary Differential Equations & MATH 140 Precalculus</li>
-            <li>Fall 2020 - MATH 241 Calculus 1 & MATH 140 Precalculus </li>
-            <li>Spring 2020 - MATH 242 Calculus 2 </li>
-            <li>Fall 2019 MATH 241 Calculus 1</li>
-            <li>Spring 2019 - MATH 242 Calculus 2 </li>
-          </ul>
-        </li>
-        <li><b>Media and Event Assistant, University of Hawaii at Manoa Office of Provost</b><br />
-          June 2020 to December 2021 <br />
-          Assisted the Better Tomorrow Speaker Series team by updating its website, social media, and providing the
-          technical support for Zoom Webinars.
-        </li>
-        <li><b>Summer Research Assitant, <a href="https://csdl.ics.hawaii.edu/">RadGrad NSF Research Experience for
-              Undergraduates Program</a></b>
-          <br />
-          May 2021 to August 2021 <br />
-          Worked under the supervision of Dr. Johnson and Dr. Moore on upgrading RadGrad based on student feedback.
-        </li>
-        <li><b>Research Assistant, <a href="http://olesonlab.org/">Oleson Lab at University of Hawaii at
-              Manoa</a></b><br />
-          May 2020 to April 2021 <br />
-          Worked under Professor Oleson, as a data analyst for a research program centering around the waste water
-          usage
-          in the islands of Oahu and Maui. </li>
-        <li><b>Tutor and Grader, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at University of
-              Hawaii at Manoa</a></b><br />
-          August 2019 to December 2020 <br />
-          Tutored introductory mathematics courses at the Learning Emporium Center and graded for 300 level math
-          courses.
-        </li>
-        <li><b>Japanese and English Translator, University of Hawaii TIM Department</b><br />
-          January 2019 to June 2020<br />
-          A Japanese to English and vice versa tranlator position for the TIM department.
-        </li>
-      </ul>
-      </p>
-      <h2 class="ui center aligned header">RELATED COURSEWORK</h2>
-      <hr />
-      <div class="ui two column grid">
-        <div class="row">
-          <div class="column">
+        <h2 class="ui center aligned header">PROFESSIONAL EXPERIENCE</h2>
+        <hr />
+        <p>
+        <ul>
+          <li><b>Research Assistant, Ogata Lab at Kyoto University </b><br />
+            April 2022 to Present</li>
+          <li><b>Translator and Part-Time Engineer, <a href="https://clovertech.jp/">CloverTech</a></b> <br />
+            March 2022 to Present <br />
+            I worked as a English to Japanese and vice versa translator and interpreter and as a part time engineer
+            assisting with on going side project with clients.</li>
+          <li><b>Front End App Developer, <a href="https://www.snappy.in.net">Snappy INC.</a></b><br />
+            March 2022 to Present <br />
+            Worked as a Front End App Developer on an app called Snappy. </li>
+          <li><b>Intro Level Software Engineer, <a href="https://beep.co.jp/">BEEP</a> </b><br />
+            December 2021 to Present <br />
+            Worked as a Software Engineer Intern at company BEEP located in Kamakura area.
+          </li>
+          <li><b>Research Assistant, <a href="https://csdl.ics.hawaii.edu/">Collaborative Software Development
+                Laboratory</a></b><br />
+            August to December 2021 <br />
+            Worked under Professor Johnson and Professor Moore on improving Internaloha.
+          </li>
+          <li><b>Mathematics Learning Assistant, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at
+                University of Hawaii at Manoa</a></b><br />
+            January 2019 to December 2021 <br />
+            Worked as an undergraduate Teaching Assistant for the math department at University of Hawaii at Manoa.
+            Helped with Calculus 1, 2, Differential Equation, and Precalculus related courses.
             <ul>
-              <li> <a href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-311-algorithms-4/">ICS 311 -
-                  Algorithms</a></li>
-              <li> ICS 314 - Software Engineering I</li>
-              <li> <a
-                  href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-312-machine-level-and-systems-programming-3/">ICS
-                  312 - Machine Level and System Programming</a></li>
-              <li> <a href="https://manoa.hawaii.edu/catalog-2019-20/courses/ics-313-programming-language-theory-3/">
-                  ICS
-                  313 - Programming Language Theory</a></li>
-              <li> ICS 321 - Database System I</li>
-              <li> ICS 332 - Operating System</li>
-              <li> ICS 390 - Computing Ethics for Lab Assistants</li>
-              <li> ICS 414 - Software Engineering II</li>
-              <li> ICS 426 - Computer System Security</li>
-              <li> ICS 427 - Software Quality Assurance</li>
-              <li> ICS 435 - Machine Learning</li>
-              <li> ICS 469 - Cognitive Science</li>
-              <li> JPN 402 - Fourth Year in Japanese II</li>
-              <li> JPN 403 - Fourth-Year Japanese for Advanced Speakers I</li>
-              <li> JPN 421 - Japanese Composition</li>
-              <li> JPN 425 - Japanese to English Translation</li>
+              <li>Fall 2021 - MATH 241 Calculus 1</li>
+              <li>Spring 2021 - MATH 302 Intro to Ordinary Differential Equations & MATH 140 Precalculus</li>
+              <li>Fall 2020 - MATH 241 Calculus 1 & MATH 140 Precalculus </li>
+              <li>Spring 2020 - MATH 242 Calculus 2 </li>
+              <li>Fall 2019 MATH 241 Calculus 1</li>
+              <li>Spring 2019 - MATH 242 Calculus 2 </li>
             </ul>
-          </div>
-          <div class="column">
-            <ul>
-              <li> MATH 301 - Discrete Mathematics</li>
-              <li> MATH 302 - Introduction to Differential Equations</li>
-              <li> MATH 304 - Mathematical Modeling: Deterministic Models</li>
-              <li> MATH 307 - Linear Algebra and Differential Equations</li>
-              <li> MATH 321 - Introduction to Advanced Mathematics</li>
-              <li> MATH 331 - Real Analysis</li>
-              <li> MATH 372 - Probablity and Statistics</li>
-              <li> MATH 402 - Partial Differential Equations I</li>
-              <li> MATH 411 - Linear Algebra</li>
-              <li> MATH 412 - Abstract Algebra I</li>
-              <li> MATH 442 - Vector Analysis</li>
-            </ul>
-          </div>
-        </div>
+          </li>
+          <li><b>Media and Event Assistant, University of Hawaii at Manoa Office of Provost</b><br />
+            June 2020 to December 2021 <br />
+            Assisted the Better Tomorrow Speaker Series team by updating its website, social media, and providing the
+            technical support for Zoom Webinars.
+          </li>
+          <li><b>Summer Research Assitant, <a href="https://csdl.ics.hawaii.edu/">RadGrad NSF Research Experience for
+                Undergraduates Program</a></b>
+            <br />
+            May 2021 to August 2021 <br />
+            Worked under the supervision of Dr. Johnson and Dr. Moore on upgrading RadGrad based on student feedback.
+          </li>
+          <li><b>Research Assistant, <a href="http://olesonlab.org/">Oleson Lab at University of Hawaii at
+                Manoa</a></b><br />
+            May 2020 to April 2021 <br />
+            Worked under Professor Oleson, as a data analyst for a research program centering around the waste water
+            usage
+            in the islands of Oahu and Maui. </li>
+          <li><b>Tutor and Grader, <a href="https://math.hawaii.edu/wordpress/">Mathematics Department at University of
+                Hawaii at Manoa</a></b><br />
+            August 2019 to December 2020 <br />
+            Tutored introductory mathematics courses at the Learning Emporium Center and graded for 300 level math
+            courses.
+          </li>
+          <li><b>Japanese and English Translator, University of Hawaii TIM Department</b><br />
+            January 2019 to June 2020<br />
+            A Japanese to English and vice versa tranlator position for the TIM department.
+          </li>
+        </ul>
+        </p>
+        <div class="push"></div>
+
       </div>
+
+
     </div>
-
-
+  </div>
+  </div>
   </div>
 
-  </div>
-
-  <div class="push"></div>
 </body>
 <script src="js/tab.js"></script>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>

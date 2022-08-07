@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 </head>
-<style>
-    .intro {
-        background-image: url("https://github.com/saitoshi/images/blob/main/index/project.png?raw=true");
-        height: 100%;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YD9L68RKBM"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-YD9L68RKBM');
+</script>
+<style>
     .posts {
         height: 50%;
     }
@@ -37,125 +36,79 @@
     }
 
     @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+
         .posts {
             height: 75%;
+            width: auto;
         }
     }
 </style>
 
 <body>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="index.html"><i class="home icon"></i> HOME</a>
-        <a href="bio.html"><i class="user circle outline icon"></i> ABOUT</a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
         <a href="work.html"><i class="file outline icon"></i> WORKS</a>
-        <a href="https://saitoshiniseda45.fc2.net/" target="_blank"><i class="pencil alternate icon"></i> BLOG</a>
-        <a href="jpn.html"><i class="folder icon"></i> 日本語</a>
-        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> MAIL</a>
-        <div id="socialmedia">
-            <a href="https://twitter.com/iseyadj45" class="fa fa-twitter"></a>
-        </div>
-    </div>
-    <div class="navbar">
-        <button
-            style="border: 0 !important;color: white; background-color: transparent;font-size: 17px; transition: top 0.3s; /* Transition effect when sliding down (and up) */  padding: 14px 16px;"
-            onclick="openNav()"><i class="align justify icon"></i></button>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="https://saitoshi.github.io/index.html">ENGLISH</a>
-        <a href="jpn.html">日本語</a>
+        <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
+        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+        <a href="jpn.html" class="bottom">日本語</a>
     </div>
 
-    <div class="intro" id="home">
-        <div class="center-screen">
-            <h2 style="text-align: center; color: black; top: 50%;">WELCOME TO MY WORLD</h2>
-        </div>
-    </div>
 
-    <div class="posts" id="about">
-        <br />
-        <h2 style="text-align: center; color: black; top: 50%;">ABOUT ME</h2>
-        <div class="row">
-            <div class="column">
-                <img class="ui circular centered medium image" src="https://saitoshi.github.io/img/about.jpg">
+    <div id="main">
+        <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
+        <h1 style="text-align: center; text-decoration: underline;">WELCOME TO MY WORLD</h1>
+        <div class="posts" id="about">
+            <h2 style="text-align: center; color: black; top: 50%;">ABOUT ME</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="ui circular centered medium image" src="https://saitoshi.github.io/img/about.jpg">
 
-            </div>
-            <div class="column">
-                <p>Born in Yokohama, I went to elementary school in Japan and did my middle to Uniersity studies in the
-                    United States.<br />
-                    Currently, I am working at BEEP, helping out clients with creating application and also working on
-                    side projects such as web design and
-                    educational materials.
-                <ul style="text-align: left;">
-                    <li>Personal Motto: WORK MORE PLAY LESS</li>
-                    <li>Bachelor Of Science in Computer Science & Mathematics</li>
-                    <li> GitHub: <a href="https://github.com/saitoshi">https://github.com/saitoshi</a></li>
-                </ul>
-                <div style="text-align: center;">
-                    <a href="bio.html" class="large ui button">FOR RESUME</a>
                 </div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="posts" style="background-color: whitesmoke;">
-
-        <h2 style="text-align: center; color: black; top: 50%;">ABOUT SITE</h2>
-        <div class="row">
-            <div class="column">
-                <img class="ui centered medium image"
-                    src="https://beep.co.jp/wp-content/themes/twentytwenty-child/images/common/ph_img_05.jpg">
-
-            </div>
-            <div class="column">
-                <p>This is a portfolio site storing all of my previous work.<br />
-                    I hope this helps you to get a better understanding of<br />
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="posts">
-        <br />
-        <h2 style="text-align: center; color: black; top: 50%;">WORKS</h2>
-        <div class="ui two cards">
-
-            <a class="ui centered card" href="oshio.html">
-                <img class="ui large centered image"
-                    src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
-                <div class="content">
-                    <div class="center aligned header"> Our Savior Revamped</div>
-                    <div class="center aligned meta"> Ongoing </div>
-                    <div class="description">
-                        A project on revamping the Our Savior Lutheran Church of Hawaii website to be more suitable for
-                        the
-                        likes of the newer generation.
+                <div class="column">
+                    <p> Born in Yokohama, I attended to elementary school in Japan and did my remaning studies at the
+                        United States. <br />
+                        Currently, I am working at the following
+                    <ul>
+                        <li>CloverTech Inc. as a Translator/Interpreter and Technology Service Provider</li>
+                        <li></li>
+                    </ul>
+                    <ul style="text-align: left;">
+                        <li>Personal Motto: WORK MORE PLAY LESS</li>
+                        <li>Bachelor Of Science in Computer Science & Mathematics</li>
+                        <li> GitHub: <a href="https://github.com/saitoshi">https://github.com/saitoshi</a></li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <a href="bio.html" class="large ui button">FOR RESUME</a>
                     </div>
+                    </p>
                 </div>
-                <div class="extra content">
-                    HTML, CSS, Web Design
-                </div>
-            </a>
-            <a class="ui centered card" href="internaloha.html">
-                <img class="ui medium centered image"
-                    src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
-                <div class="content">
-                    <div class="center aligned header"> Internaloha</div>
-                    <div class="center aligned meta"> 2021-12-10 </div>
-                    <div class="description">
-                        A scrapper for the RadGrad application where it extracts information for recent internships.
-                    </div>
-                </div>
-                <div class="extra content">
-                    Software Engineering, Scrapper, TypeScript
-                </div>
-            </a>
+            </div>
+            <br />
         </div>
-        <br />
-        <div style="text-align: center;">
-            <a href="work.html" class="large ui button">SEE MORE</a>
+
+        <div class="posts" style="background-color: whitesmoke;">
+            <br />
+            <h2 style="text-align: center; color: black; top: 50%;">ABOUT SITE</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="ui centered medium image"
+                        src="https://beep.co.jp/wp-content/themes/twentytwenty-child/images/common/ph_img_05.jpg">
+
+                </div>
+                <div class="column">
+                    <p>This is a portfolio site storing all of my previous work.<br />
+                        I hope this helps you to get a better understanding of<br />
+                    </p>
+                </div>
+            </div>
+            <br />
         </div>
+
+
     </div>
 
 </body>

@@ -43,120 +43,110 @@
 </style>
 
 <body>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="jpn.html"><i class="home icon"></i> HOME</a>
-        <a href="bio.html"><i class="user circle outline icon"></i> ABOUT</a>
-        <a href="workJPN.html"><i class="file outline icon"></i> WORKS</a>
-        <a href="https://saitoshiniseda45.fc2.net/" target="_blank"><i class="pencil alternate icon"></i> BLOG</a>
-        <a href="jpn.html"><i class="folder icon"></i> 日本語</a>
-        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> MAIL</a>
-        <div id="socialmedia">
-            <a href="https://twitter.com/iseyadj45" class="fa fa-twitter"></a>
-        </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
+        <a href="work.html"><i class="file outline icon"></i> WORKS</a>
+        <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
+        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+        <a href="jpn.html" class="bottom">日本語</a>
     </div>
-    <div class="navbar">
-        <button
-            style="border: 0 !important;color: white; background-color: transparent;font-size: 17px; transition: top 0.3s; /* Transition effect when sliding down (and up) */  padding: 14px 16px;"
-            onclick="openNav()"><i class="align justify icon"></i></button>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="https://saitoshi.github.io/index.html">ENGLISH</a>
-        <a href="jpn.html">日本語</a>
-    </div>
+    <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
+    <div id="main">
 
-    <div class="intro" id="home">
-        <div class="center-screen">
-            <h2 style="text-align: center; color: black; top: 50%;">私の世界へようこそ。</h2>
-        </div>
-    </div>
-
-    <div class="posts" id="about">
-        <br />
-        <h2 style="text-align: center; color: black; top: 50%;">ABOUT ME</h2>
-        <div class="row">
-            <div class="column">
-                <img class="ui circular centered medium image" src="https://saitoshi.github.io/img/about.jpg">
-
+        <div class="intro" id="home">
+            <div class="center-screen">
+                <h2 style="text-align: center; color: black; top: 50%;">私の世界へようこそ。</h2>
             </div>
-            <div class="column">
-                <p>神奈川県生まれのエンジニア。小学校は日本で、中学から大学はアメリカで、そして2021年、日本に帰国。<br />
-                    現在はBEEP 社でクライアントのソフトウェア開発とフリーでWebページ作成。<br />
-                    他には日常に使えるアメリカン英語などを教えています。
-                <ul style="text-align: left;">
-                    <li>人生のモットー: WORK MORE PLAY LESS</li>
-                    <li>ハワイ大学自然科学学部コンピューターサイエンスと数学学科　卒業</li>
-                    <li> GitHub: <a href="https://github.com/saitoshi">https://github.com/saitoshi</a></li>
-                </ul>
-                <div style="text-align: center;">
-                    <a href="bioJPN.html" class="large ui button">詳しい履歴</a>
+        </div>
+
+        <div class="posts" id="about">
+            <br />
+            <h2 style="text-align: center; color: black; top: 50%;">ABOUT ME</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="ui circular centered medium image" src="https://saitoshi.github.io/img/about.jpg">
+
                 </div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="posts" style="background-color: whitesmoke;">
-
-        <h2 style="text-align: center; color: black; top: 50%;">ABOUT SITE</h2>
-        <div class="row">
-            <div class="column">
-                <img class="ui centered medium image"
-                    src="https://beep.co.jp/wp-content/themes/twentytwenty-child/images/common/ph_img_05.jpg">
-
-            </div>
-            <div class="column">
-                <p>こちらはSHUNのポートフォリオサイトです。これまで手がけた創作物をまとめています。<br />
-                    私の事を深く知ってほしいと思いまして作りました。<br />
-                    どうぞお茶でも飲みながらごゆるりとサイト内を散策してください。
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="posts">
-        <br />
-        <h2 style="text-align: center; color: black; top: 50%;">WORKS</h2>
-        <div class="ui two cards">
-            <div class="ui container" style="text-align: center;">
-                <p>腕によりをかけて制作した、愛すべき成果物たちをご紹介します。</p>
-            </div>
-            <a class="ui centered card" href="oshio.html">
-                <img class="ui large centered image"
-                    src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
-                <div class="content">
-                    <div class="center aligned header"> Our Savior Revamped</div>
-                    <div class="center aligned meta"> Ongoing </div>
-                    <div class="description">
-                        A project on revamping the Our Savior Lutheran Church of Hawaii website to be more suitable for
-                        the
-                        likes of the newer generation.
+                <div class="column">
+                    <p>神奈川県生まれのエンジニア。小学校は日本で、中学から大学はアメリカで、そして2021年、日本に帰国。<br />
+                        現在はBEEP 社でクライアントのソフトウェア開発とフリーでWebページ作成。<br />
+                        他には日常に使えるアメリカン英語などを教えています。
+                    <ul style="text-align: left;">
+                        <li>人生のモットー: WORK MORE PLAY LESS</li>
+                        <li>ハワイ大学自然科学学部コンピューターサイエンスと数学学科　卒業</li>
+                        <li> GitHub: <a href="https://github.com/saitoshi">https://github.com/saitoshi</a></li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <a href="bioJPN.html" class="large ui button">詳しい履歴</a>
                     </div>
+                    </p>
                 </div>
-                <div class="extra content">
-                    HTML, CSS, Web Design
-                </div>
-            </a>
-            <a class="ui centered card" href="internaloha.html">
-                <img class="ui medium centered image"
-                    src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
-                <div class="content">
-                    <div class="center aligned header"> Internaloha</div>
-                    <div class="center aligned meta"> 2021-12-10 </div>
-                    <div class="description">
-                        A scrapper for the RadGrad application where it extracts information for recent internships.
-                    </div>
-                </div>
-                <div class="extra content">
-                    Software Engineering, Scrapper, TypeScript
-                </div>
-            </a>
+            </div>
         </div>
-        <br />
-        <div style="text-align: center;">
-            <a href="workJPN.html" class="large ui button">もっと見る</a>
+
+        <div class="posts" style="background-color: whitesmoke;">
+
+            <h2 style="text-align: center; color: black; top: 50%;">ABOUT SITE</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="ui centered medium image"
+                        src="https://beep.co.jp/wp-content/themes/twentytwenty-child/images/common/ph_img_05.jpg">
+
+                </div>
+                <div class="column">
+                    <p>こちらはSHUNのポートフォリオサイトです。これまで手がけた創作物をまとめています。<br />
+                        私の事を深く知ってほしいと思いまして作りました。<br />
+                        どうぞお茶でも飲みながらごゆるりとサイト内を散策してください。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts">
+            <br />
+            <h2 style="text-align: center; color: black; top: 50%;">WORKS</h2>
+            <div class="ui two cards">
+                <div class="ui container" style="text-align: center;">
+                    <p>腕によりをかけて制作した、愛すべき成果物たちをご紹介します。</p>
+                </div>
+                <a class="ui centered card" href="oshio.html">
+                    <img class="ui large centered image"
+                        src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
+                    <div class="content">
+                        <div class="center aligned header"> Our Savior Revamped</div>
+                        <div class="center aligned meta"> Ongoing </div>
+                        <div class="description">
+                            A project on revamping the Our Savior Lutheran Church of Hawaii website to be more suitable
+                            for
+                            the
+                            likes of the newer generation.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        HTML, CSS, Web Design
+                    </div>
+                </a>
+                <a class="ui centered card" href="internaloha.html">
+                    <img class="ui medium centered image"
+                        src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
+                    <div class="content">
+                        <div class="center aligned header"> Internaloha</div>
+                        <div class="center aligned meta"> 2021-12-10 </div>
+                        <div class="description">
+                            A scrapper for the RadGrad application where it extracts information for recent internships.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        Software Engineering, Scrapper, TypeScript
+                    </div>
+                </a>
+            </div>
+            <br />
+            <div style="text-align: center;">
+                <a href="workJPN.html" class="large ui button">もっと見る</a>
+            </div>
         </div>
     </div>
-
 </body>
 <script src="js/menu.js"></script>
