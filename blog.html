@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shun Portfolio | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Shin">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YD9L68RKBM"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YD9L68RKBM');
+</script>
+<script src="js/menu.js" type="text/javascript"></script>
+<style>
+    .posts {
+        height: 50%;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    /* Header/Blog Title */
+    .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: whitesmoke;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .card a {
+        color: black;
+    }
+
+    .card a:hover {
+        color: blue;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 500px) {
+        .column {
+            width: 100%;
+        }
+
+        .posts {
+            height: 75%;
+            width: auto;
+        }
+    }
+</style>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
+        <a href="work.html"><i class="file outline icon"></i> WORKS</a>
+        <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
+        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+        <a href="jpn.html" class="bottom">日本語</a>
+    </div>
+    <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
+    <div id="main">
+        <div class="header">
+            <h2 style="text-align: center;">Blog Name</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h2 style="text-align: center;">TITLE HEADING</h2>
+                    <h5 style="text-align: center;">Title description, Dec 7, 2017</h5>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco.</p>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h2>TITLE HEADING</h2>
+                    <h5>Title description, Dec 7, 2017</h5>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
