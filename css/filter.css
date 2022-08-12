@@ -2,9 +2,8 @@
   text-align: center;
   display: none;
   transition: 0.3s;
-  max-width: 25%;
-  margin-left: 15px;
-  margin-bottom: 10px;
+ 
+
   
   }
 
@@ -121,8 +120,6 @@
   .filterDiv {
     max-width: 50%;
   }
-  .ui.centered.card {
-    max-width: 75%;
-  }
+ 
  }
 
