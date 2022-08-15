@@ -1,228 +1,229 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Iseda | Works </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/filter.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <head>
+        <title>Iseda | Works </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/filter.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
-</head>
-<style>
-    .posts {
-        height: 50%;
-    }
-
-    .column {
-        float: left;
-        width: 50%;
-    }
-
-    /* Header/Blog Title */
-    .header {
-        padding: 30px;
-        font-size: 40px;
-        text-align: center;
-        background: white;
-    }
-
-    .ui.centered.card {
-        text-align: center;
-    }
-
-    /* Add a card effect for articles */
-    .card {
-        background-color: whitesmoke;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .card a {
-        color: black;
-    }
-
-    .card a:hover {
-        color: blue;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    @media screen and (max-width: 500px) {
-        .column {
-            width: 100%;
-        }
-
+    </head>
+    <style>
         .posts {
-            height: 75%;
-            width: auto;
+            height: 50%;
         }
-    }
-</style>
 
-<body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
-        <a href="work.html"><i class="file outline icon"></i> WORKS</a>
-        <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
-        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
-        <a href="jpn.html" class="bottom">日本語</a>
-    </div>
-    <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
-    <div id="main">
-        <h2 class="ui center aligned header">WORKS</h2>
-        <div class="ui text container" style="text-align: center">
-            <b>Here are some projects I have done.</b>
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+
+        .ui.centered.card {
+            text-align: center;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: whitesmoke;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .card a {
+            color: black;
+        }
+
+        .card a:hover {
+            color: blue;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+
+            .posts {
+                height: 75%;
+                width: auto;
+            }
+        }
+    </style>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
+            <a href="work.html"><i class="file outline icon"></i> WORKS</a>
+            <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
+            <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+            <a href="jpn.html" class="bottom">日本語</a>
         </div>
-        <div class="ui container">
-            <div id="filterBtnContainer">
-                <button class="filterBtn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="filterBtn" onclick="filterSelection('cs')">Software Engineering</button>
-                <button class="filterBtn" onclick="filterSelection('webDesign')">Web Design</button>
-                <button class="filterBtn" onclick="filterSelection('translation')">Translation</button>
+        <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
+        <div id="main">
+            <h2 class="ui center aligned header">WORKS</h2>
+            <div class="ui text container" style="text-align: center">
+                <b>Here are some projects I have done.</b>
+            </div>
+            <div class="ui container">
+                <div id="filterBtnContainer">
+                    <button class="filterBtn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="filterBtn" onclick="filterSelection('cs')">Software Engineering</button>
+                    <button class="filterBtn" onclick="filterSelection('webDesign')">Web Design</button>
+                    <button class="filterBtn" onclick="filterSelection('translation')">Translation</button>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="filterDiv cs">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/jpn/fanfundLogo.png?raw=true"
+                                alt="fanfund">
+                            <h2 style="text-align: center;">Fan Fund</h2>
+                            <h5 style="text-align: center;">August 2022</h5>
+                            <p>An ongoing app development project in which users can select a company to send in virtual
+                                tokens to
+                                provide support for local companies or start ups.
+                                <hr>
+                                <span>Software Engineering</span>
+                            <div style="text-align: center;">
+                                <a href="#" class="large ui button">IN PROGRESS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="filterDiv webDesign">
+                        <div class="card">
+                            <img class="ui big centered image"
+                                src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
+                            <h2 style="text-align: center;">Our Savior Revamped</h2>
+                            <h5 style="text-align: center;">Decemeber 2021</h5>
+                            <p>A project on revamping the Our Savior Lutheran Church of Hawaii website to be more
+                                suitable
+                                for the likes
+                                of
+                                the newer generation.
+                                <hr>
+                                <span>Web Design</span>
+                            <div style="text-align: center;">
+                                <a href="oshio.html" class="large ui button">More Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="filterDiv webDesign">
+                        <div class="card">
+                            <img class="ui small centered image"
+                                src="https://internaloha.github.io/documentation/img/internaloha-logo.png"
+                                alt="internaloha">
+                            <h2 style="text-align: center;">Internaloha</h2>
+                            <h5 style="text-align: center;">Decemeber 2021</h5>
+                            <p>A scrapper application that extracts info for internships.
+                                <hr>
+                                <span>Software Engineering</span>
+                            <div style="text-align: center;">
+                                <a href="internaloha.html" class="large ui button">More Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="filterDiv cs">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/radgradtask/RadGrad.png?raw=true"
+                                alt="radgrad">
+                            <h2 style="text-align: center;">RadGrad 2.0</h2>
+                            <h5 style="text-align: center;">August 2021</h5>
+                            <p>A meteor based application in which ICS students at UH Manoa can use it as an
+                                undergraduate
+                                planner.
+                                <hr>
+                                <span>Software Engineering</span>
+                            <div style="text-align: center;">
+                                <a href="internaloha.html" class="large ui button">More Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="filterDiv cs">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/shockingemission/shocking.png?raw=true"
+                                alt="shocking_emission">
+                            <h2 style="text-align: center;">Shocking Emissions</h2>
+                            <h5 style="text-align: center;">May 2021</h5>
+                            <p>A Meteor-Based application in which customers of Hawaiian Electric Industries can see
+                                how
+                                much green house
+                                gases they burn in their daily transportations.
+                                <hr>
+                                <span>Software Engineering</span>
+                            <div style="text-align: center;">
+                                <a href="shocking.html" class="large ui button">More Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="filterDiv translation">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/jpn/tregear.png?raw=true"
+                                alt="tregear">
+                            <h2 style="text-align: center;">Tregear Story</h2>
+                            <h5 style="text-align: center;">May 2021</h5>
+                            <p>A Japanese to English translation for the short story called "Tregear Story" written by
+                                NAKANO Takao.
+                                <hr>
+                                <span>Translation</span>
+                            <div style="text-align: center;">
+                                <a href="tregear.html" class="large ui button">More Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <br />
-            <div class="row">
-                <div class="filterDiv cs">
-                    <div class="card">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/jpn/fanfundLogo.png?raw=true"
-                            alt="fanfund">
-                        <h2 style="text-align: center;">Fan Fund</h2>
-                        <h5 style="text-align: center;">August 2022</h5>
-                        <p>An ongoing app development project in which users can select a company to send in virtual
-                            tokens to
-                            provide support for local companies or start ups.
-                            <hr>
-                            <span>Software Engineering</span>
-                        <div style="text-align: center;">
-                            <a href="#" class="large ui button">IN PROGRESS</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="filterDiv webDesign">
-                    <div class="card">
-                        <img class="ui big centered image"
-                            src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
-                        <h2 style="text-align: center;">Our Savior Revamped</h2>
-                        <h5 style="text-align: center;">Decemeber 2021</h5>
-                        <p>A project on revamping the Our Savior Lutheran Church of Hawaii website to be more
-                            suitable
-                            for the likes
-                            of
-                            the newer generation.
-                            <hr>
-                            <span>Web Design</span>
-                        <div style="text-align: center;">
-                            <a href="oshio.html" class="large ui button">More Detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="filterDiv webDesign">
-                    <div class="card">
-                        <img class="ui small centered image"
-                            src="https://internaloha.github.io/documentation/img/internaloha-logo.png"
-                            alt="internaloha">
-                        <h2 style="text-align: center;">Internaloha</h2>
-                        <h5 style="text-align: center;">Decemeber 2021</h5>
-                        <p>A scrapper application that extracts info for internships.
-                            <hr>
-                            <span>Software Engineering</span>
-                        <div style="text-align: center;">
-                            <a href="internaloha.html" class="large ui button">More Detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="filterDiv cs">
-                    <div class="card">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/radgradtask/RadGrad.png?raw=true"
-                            alt="radgrad">
-                        <h2 style="text-align: center;">RadGrad 2.0</h2>
-                        <h5 style="text-align: center;">August 2021</h5>
-                        <p>A meteor based application in which ICS students at UH Manoa can use it as an
-                            undergraduate
-                            planner.
-                            <hr>
-                            <span>Software Engineering</span>
-                        <div style="text-align: center;">
-                            <a href="internaloha.html" class="large ui button">More Detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="filterDiv cs">
-                    <div class="card">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/shockingemission/shocking.png?raw=true"
-                            alt="shocking_emission">
-                        <h2 style="text-align: center;">Shocking Emissions</h2>
-                        <h5 style="text-align: center;">May 2021</h5>
-                        <p>A Meteor-Based application in which customers of Hawaiian Electric Industries can see
-                            how
-                            much green house
-                            gases they burn in their daily transportations.
-                            <hr>
-                            <span>Software Engineering</span>
-                        <div style="text-align: center;">
-                            <a href="internaloha.html" class="large ui button">More Detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="filterDiv translation">
-                    <div class="card">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/jpn/tregear.png?raw=true" alt="tregear">
-                        <h2 style="text-align: center;">Tregear Story</h2>
-                        <h5 style="text-align: center;">May 2021</h5>
-                        <p>A Japanese to English translation for the short story called "Tregear Story" written by
-                            NAKANO Takao.
-                            <hr>
-                            <span>Translation</span>
-                        <div style="text-align: center;">
-                            <a href="internaloha.html" class="large ui button">More Detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <br />
 
-    </div>
-    <br />
+        </div>
+        </div>
+        </div>
+        <div class="push"></div>
+        <footer style="background-color: whitesmoke; text-align: center;">
+            <br />
+            <a href="index.html"><i class="home icon" style="font-size: 30px; color:black;"></i></a><br />
+            &#xA9; Shin Saito 2022
 
-    </div>
-    </div>
-    </div>
-    <div class="push"></div>
-    <footer style="background-color: whitesmoke; text-align: center;">
-        <br />
-        <a href="index.html"><i class="home icon" style="font-size: 30px; color:black;"></i></a><br />
-        &#xA9; Shin Saito 2022
-
-    </footer>
-</body>
-<script src="js/menu.js"></script>
+        </footer>
+    </body>
+    <script src="js/menu.js"></script>
