@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Iseda | Works </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/filter.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script src="js/menu.js"></script>
-</head>
+    <head>
+        <title>Iseda | Works </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/filter.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <script src="js/menu.js"></script>
+    </head>
+    <style>
+        .posts {
+            height: 50%;
+        }
 
-<body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
-        <a href="work.html"><i class="file outline icon"></i> WORKS</a>
-        <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
-        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
-        <a href="jpn.html" class="bottom">日本語</a>
-    </div>
-    <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
-    <div id="main">
-        <h2 class="ui center aligned header">WORKS</h2>
-        <div class="ui text container" style="text-align: center">
-            <b>腕によりをかけて制作した、愛すべき成果物たちをご紹介します。</b>
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+
+        .ui.centered.card {
+            text-align: center;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: whitesmoke;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .card a {
+            color: black;
+        }
+
+        .card a:hover {
+            color: blue;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+
+            .posts {
+                height: 75%;
+                width: auto;
+            }
+        }
+    </style>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
+            <a href="work.html"><i class="file outline icon"></i> WORKS</a>
+            <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
+            <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+            <a href="jpn.html" class="bottom">日本語</a>
         </div>
-        <div class="ui container">
-            <div id="filterBtnContainer">
-                <button class="filterBtn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="filterBtn" onclick="filterSelection('cs')">Software Engineering</button>
-                <button class="filterBtn" onclick="filterSelection('webDesign')">Web Design</button>
-                <button class="filterBtn" onclick="filterSelection('translation')">Translation</button>
+        <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
+        <div id="main">
+            <h2 class="ui center aligned header">WORKS</h2>
+            <div class="ui text container" style="text-align: center">
+                <b>腕によりをかけて制作した、愛すべき成果物たちをご紹介します。</b>
             </div>
-        </div>
+            <div class="ui container">
+                <div id="filterBtnContainer">
+                    <button class="filterBtn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="filterBtn" onclick="filterSelection('cs')">Software Engineering</button>
+                    <button class="filterBtn" onclick="filterSelection('webDesign')">Web Design</button>
+                    <button class="filterBtn" onclick="filterSelection('translation')">Translation</button>
+                </div>
+            </div>
 
-        <br />
-        <div class="ui container">
-
-            <div class="ui two cards">
+            <br />
+            <div class="ui one cards">
                 <div class="filterDiv webDesign">
                     <div class="ui centered card" href="oshio.html">
                         <img class="ui medium centered image"
@@ -135,7 +188,8 @@
                                     <div class="row">
                                         <div class="column">
                                             <p>ハワイ大学のアプリ用のインターンなどを検索するスクレーパーファンクションをTypeScriptとNode.jsなどで開発。
-                                                Indeed, Apple,などの仕事探しのサイトから重要な情報をJSONファイルへ書き、それをハワイ大学の学生専用アプリに転送。<br />
+                                                Indeed,
+                                                Apple,などの仕事探しのサイトから重要な情報をJSONファイルへ書き、それをハワイ大学の学生専用アプリに転送。<br />
                                                 このアプリの一番の目標はで学生の目標に合うインターンや仕事探しの時間を減らすことです。
                                             </p>
                                             <div style="text-align: left;">
@@ -518,10 +572,11 @@
                 </div>
 
 
-
             </div>
-        </div>
-    </div>
 
-</body>
-<script src="js/menu.js"></script>
+
+        </div>
+        </div>
+
+    </body>
+    <script src="js/menu.js"></script>
