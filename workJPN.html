@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Iseda | Works </title>
+        <title>Shin | Works </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
@@ -57,6 +57,10 @@
             clear: both;
         }
 
+        span {
+            font-weight: bold;
+        }
+
         @media screen and (max-width: 500px) {
             .column {
                 width: 100%;
@@ -73,10 +77,10 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
-            <a href="work.html"><i class="file outline icon"></i> WORKS</a>
+            <a href="workJPN.html"><i class="file outline icon"></i> WORKS</a>
             <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
             <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
-            <a href="jpn.html" class="bottom">日本語</a>
+            <a href="work.html" class="bottom">ENGLISH</a>
         </div>
         <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
         <div id="main">
@@ -91,491 +95,182 @@
                     <button class="filterBtn" onclick="filterSelection('webDesign')">Web Design</button>
                     <button class="filterBtn" onclick="filterSelection('translation')">Translation</button>
                 </div>
-            </div>
-
-            <br />
-            <div class="ui one cards">
-                <div class="filterDiv webDesign">
-                    <div class="ui centered card" href="oshio.html">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true">
-                        <div class="content">
-                            <div class="center aligned header"> Our Savior Revamped</div>
-                            <div class="center aligned meta"> Ongoing </div>
-                        </div>
-                        <div class="extra content">
-                            Web Design <br />
-                            <button class="modal-button" href="#myModal1">詳しく見る</button>
-                        </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal1" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-
-                            <span class="close">×</span>
-                            <h2 style="text-align: center;">Our Savior Hawaii サイト</h2>
+                <div class="row">
+                    <div class="filterDiv cs">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/jpn/fanfundLogo.png?raw=true"
+                                alt="fanfund">
+                            <h2 style="text-align: center;">Fan Fund</h2>
+                            <h5 style="text-align: center;">進行中</h5>
+                            <p style="text-align: left;">
+                            <ul style="text-align: left;">
+                                <li><b>使用ツール</b>:TypeScript, React, NodeJS, Express</li>
+                                <li><b>説明：</b>日本企業向けのクラウドファンディングサービスアプリ。</li>
+                            </ul>
+                            </p>
                             <hr>
-
-
-                            <div class="modal-body">
-                                <div class="ui two column grid">
-                                    <div class="row">
-                                        <div class="column">
-                                            <p>ハワイにあるLutheran向けの教会のOur Savior Hawaiiのサイトを今時の20～30代をターゲットに
-                                                アップグレードをしたWeb サイトです。<br />
-                                                教会のパスターの指示を元に、サイドメニューや動く背景などを入れ、HTMLを基本としとCSSとJavaScriptによるアニメーションも取り入れ、楽しく閲覧できるサイトになるよう工夫しています。
-                                            </p>
-                                            <div style="text-align: left;">
-                                                <a href="https://oshi0-website.github.io/oshi0-website/"><i
-                                                        class="play icon"></i>Demo</a><br />
-                                                <a href="https://oshi0-website.github.io/oshi0-website/"><i
-                                                        class="github icon"></i>GitHub</a>
-                                            </div>
-                                            <br />
-                                            <h3 style="text-align: center;">使用言語</h3>
-
-                                            HTML, CSS, JavaScript
-
-                                        </div>
-                                        <div class="column">
-                                            <img class="ui big centered image"
-                                                src="https://github.com/saitoshi/images/blob/main/oshio/oshio.png?raw=true">
-                                            <div class="comment">サイトのスクリーンショット
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
+                            <span>Software Engineering</span>
 
                         </div>
-
                     </div>
                 </div>
+                <div class="row">
+                    <div class="filterDiv translation">
+                        <div class="card">
+                            <img style="background-color: gray;" class="ui medium centered image"
+                                src="https://buzz-trip.com/kamakura/wp-content/themes/buzz-trip/images/common/logo.svg"
+                                alt="buzztrip">
+                            <h2 style="text-align: center;">BuzzTrip</h2>
+                            <h5 style="text-align: center;">進行中</h5>
+                            <p style="text-align: left;">
+                            <ul style="text-align: left;">
+                                <li><b>説明：</b>鎌倉の観光案内サイトの日本語で書かれた記事を英語圏のユーザー向けへのローカライズ。</li>
+                                <li><b>担当翻訳記事</b></li>
+                                </p>
+                            </ul>
+                            <hr>
+                            <span>Translation</span>
 
-                <div class="filterDiv cs">
-                    <div class="ui centered card" href="#internaloha">
-                        <img class="ui small centered image"
-                            src="https://internaloha.github.io/documentation/img/internaloha-logo.png">
-                        <div class="content">
-                            <div class="center aligned header"> Internaloha</div>
-                            <div class="center aligned meta"> 2021-12-10 </div>
-                        </div>
-                        <div class="extra content">
-                            Software Engineering <br />
-                            <button class="modal-button" href="#internaloha">詳しく見る</button>
                         </div>
                     </div>
+                </div>s
+                <div class="row">
+                    <div class="filterDiv webDesign">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/oshio/sampleB.png?raw=true"
+                                alt="oshio">
+                            <h2 style="text-align: center;">Our Savior Hawaii</h2>
+                            <h5 style="text-align: center;">Jan. 2022</h5>
+                            <p style="text-align: left;">
+                            <ul style="text-align: left;">
+                                <li><b>使用ツール</b>:HTML, CSS, JavaScript</li>
+                                <li><b>説明：</b>ハワイにある教会のウェブサイトの新しいバージョンの作成。依頼内容はウェブサイト自体をもっと現代向けと若者受けがいい感じという内容。</li>
+                            </ul>
+                            </p>
+                            <hr>
+                            <span>Web Design, HTML, CSS</span>
 
-                    <!-- The Modal -->
-                    <div id="internaloha" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-
-                            <span class="close">×</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="filterDiv cs">
+                        <div class="card">
+                            <img class="ui small centered image"
+                                src="https://internaloha.github.io/documentation/img/internaloha-logo.png"
+                                alt="internaloha_logo" />
                             <h2 style="text-align: center;">Internaloha</h2>
+                            <h5 style="text-align: center;">Dec. 2021</h5>
+                            <p style="text-align: left;">
+                            <ul style="text-align: left;">
+                                <li><b>使用ツール</b>:TypeScript, Puppeteer, React</li>
+                                <li><b>説明：</b>大学の卒業アプリのために開発した学生向けアプリの機能。アメリカの転職や新卒採用サイト（Indeed, LinkedIn）から情報をスクレープをし、
+                                    それをアプリに載せる機能です。これにより、生徒の仕事探しへの効率化を目指すサイトです。</li>
+                                <li>アプリのレポート：</li>
+                            </ul>
+                            </p>
                             <hr>
-
-
-                            <div class="modal-body">
-                                <div class="ui two column grid">
-                                    <div class="row">
-                                        <div class="column">
-                                            <p>ハワイ大学のアプリ用のインターンなどを検索するスクレーパーファンクションをTypeScriptとNode.jsなどで開発。
-                                                Indeed,
-                                                Apple,などの仕事探しのサイトから重要な情報をJSONファイルへ書き、それをハワイ大学の学生専用アプリに転送。<br />
-                                                このアプリの一番の目標はで学生の目標に合うインターンや仕事探しの時間を減らすことです。
-                                            </p>
-                                            <div style="text-align: left;">
-                                                <a href="https://internaloha.github.io/documentation/"><i
-                                                        class="play icon"></i>Documentation</a><br />
-                                                <a href="https://github.com/internaloha/scrapers"><i
-                                                        class="github icon"></i>GitHub</a>
-                                            </div>
-                                            <br />
-                                            <h3 style="text-align: center;">使用言語</h3>
-
-                                            TypeScript, Node.js, React
-
-                                        </div>
-                                        <div class="column">
-                                            <img class="ui medium centered image"
-                                                src="https://raw.githubusercontent.com/saitoshi/images/main/internaloha/radgrad.png">
-                                            <div class="comment">Internalohaが各サイトから抜き取ったインターン情報。
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-
+                            <span>Software Engineering, TypeScript, React</span>
                         </div>
-
                     </div>
                 </div>
 
-                <div class="filterDiv cs">
-                    <div class="ui centered card" href="radgrad.html">
-                        <img class="ui small centered image"
-                            src="https://github.com/saitoshi/images/blob/main/radgradtask/RadGrad.png?raw=true">
-                        <div class="content">
-                            <div class="center aligned header"> RadGrad 2.0</div>
-                            <div class="center aligned meta"> 2021-07-31 </div>
-                        </div>
-                        <div class="extra content">
-                            Software Engineering
-                            <button class="modal-button" href="#radgrad">詳しく見る</button>
-                        </div>
-                    </div>
-                    <div id="radgrad" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-
-                            <span class="close">×</span>
-                            <h2 style="text-align: center;">RadGrad</h2>
+                <div class="row">
+                    <div class="filterDiv cs">
+                        <div class="card">
+                            <img class="ui small centered image"
+                                src="https://github.com/saitoshi/images/blob/main/radgradtask/RadGrad.png?raw=true"
+                                alt="radgrad_logo" />
+                            <h2 style="text-align: center;">RadGrad 2.0</h2>
+                            <h5 style="text-align: center;">Aug. 2021</h5>
+                            <p style="text-align: left;">
+                            <ul style="text-align: left;">
+                                <li><b>使用ツール</b>:TypeScript, React, Meteor</li>
+                                <li><b>説明：</b>学生インターンとして、ハワイ大学のコンピューターサイエンス専攻学生向けのアプリで学生生活の４年間を目標と合わせておすすめなプラン、インターン、授業、研究を紹介するアプリです。
+                                    主な作業はJavaScript Reactで書かれた1.0をTypeScript React (.tsx) に書き直し、ver
+                                    1のフィードバックを元にアプリに新しい機能などの追加。</li>
+                                <li><b>主な作業</b>
+                                    <ul>
+                                        <li>Javascript React (.jsx)からTypeScript React(.tsx)への書き直し</li>
+                                        <li>フロントエンド作業：</li>
+                                        <li>バックエンド作業：</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </p>
                             <hr>
-
-
-                            <div class="modal-body">
-                                <div class="ui two column grid">
-                                    <div class="row">
-                                        <div class="column">
-                                            <p>ハワイ大学の学生向けのアプリで、生徒個別の目標に合わせて大学の4年のうちに受けるおすすめな授業やインターンをまとめたアプリです。
-                                                例えば、ゲームデザイナー志望の生徒に合わせたおすすめな授業やインターンを何年生のうちに受けるかなどがわかります。
-                                                <br />
-                                                フレームワークはFormantic UI を使用、TypeScript React (TSX)
-                                                によるアニメーションも取り入れ、楽しくと使いやすいアプリになるように工夫しています。
-                                            </p>
-                                            <div style="text-align: left;">
-                                                <a href="https://www.radgrad.org/%22%7D"><i
-                                                        class="play icon"></i>Documentation</a><br />
-                                                <a href="https://github.com/radgrad/radgrad2"><i
-                                                        class="github icon"></i>GitHub</a>
-                                            </div>
-                                            <br />
-                                            <h3 style="text-align: center;">使用言語</h3>
-
-                                            TypeScript, Node.js, React
-
-                                        </div>
-                                        <div class="column">
-                                            <img class="ui big centered image"
-                                                src="https://github.com/saitoshi/images/blob/main/radgradtask/week3.gif?raw=true">
-                                            <div class="comment">RadGradのアプリのサンプルGIF
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-
+                            <span>Software Engineering, TypeScript, React</span>
                         </div>
-
                     </div>
-
                 </div>
-
-                <div class="filterDiv cs">
-                    <div class="ui centered card" href="algortix.html">
-                        <img class="ui medium centered image"
-                            src="https://raw.githubusercontent.com/saitoshi/images/main/algotrix.png">
-                        <div class="content">
-                            <div class="center aligned header"> Algo-Trix</div>
-                            <div class="center aligned meta"> 2021-07-03 </div>
-
-                        </div>
-                        <div class="extra content">
-                            Software Engineering<br />
-                            <button class="modal-button" href="#algotrix">詳しく見る</button>
-                        </div>
-                    </div>
-
-                    <!-- The Modal -->
-                    <div id="algotrix" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-
-                            <span class="close">×</span>
-                            <h2 style="text-align: center;">AlgoTrix</h2>
+                <div class="row">
+                    <div class="filterDiv cs">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/shockingemission/shocking.png?raw=true"
+                                alt="shocking_logo" />
+                            <h2 style="text-align: center;">Shocking Emissions</h2>
+                            <h5 style="text-align: center;">May 2021</h5>
+                            <p style="text-align: left;">
+                            <ul style="text-align: left;">
+                                <li><b>使用ツール</b>:JavaScript, React, Meteor</li>
+                                <li><b>説明：</b>学生企画として、現地の電気会社と共同開発したウェブアプリ。<br />ユーザーが1日でどのくらいのCO2を使用したかを自動的に計算をし、
+                                    他のお客とどう比べるか、またはCO2の使用を減らせば電気またはガス代をどのくらい節約をできるかを表示します。
+                                </li>
+                                <li><b>主な作業</b>
+                                    <ul>
+                                        <li>ユーザー登録設定</li>
+                                        <li>チームの管理（会議やメッセージを管理）</li>
+                                        <li>計算機能の作成</li>
+                                    </ul>
+                                <li>ミニレポート（英語）：<a href="shocking.html">Shocking Emission</a></li>
+                                </li>
+                            </ul>
+                            </p>
                             <hr>
-
-
-                            <div class="modal-body">
-                                <div class="ui two column grid">
-                                    <div class="row">
-                                        <div class="column">
-                                            <p>ICS 427のために開発されたアプリで、学生が就活または授業用にアルゴリズムの基本を復習が出来ます。<br />
-                                                フレームワークはSemantic UI Reactを使用、JavaScript React (JSX)
-                                                によるアニメーションも取り入れ、楽に使用出来るるよう工夫しています。
-                                            </p>
-                                            <div style="text-align: left;">
-                                                <a href="https://cross-country-coders.github.io/"><i
-                                                        class="play icon"></i>Documentation</a><br />
-                                                <a href="https://github.com/cross-country-coders/algo-trix"><i
-                                                        class="github icon"></i>GitHub</a>
-                                            </div>
-                                            <br />
-                                            <h3 style="text-align: center;">使用言語</h3>
-
-                                            JavaScript React, Meteor, Node.js
-
-                                        </div>
-                                        <div class="column">
-                                            <img class="ui big centered image"
-                                                src="https://cross-country-coders.github.io/images/problem.gif">
-                                            <div class="comment">Algo-TrixのアプリのサンプルGIF
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="filterDiv cs">
-                    <div class="ui centered card" href="shocking.html">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/shockingemission/shocking.png?raw=true">
-                        <div class="content">
-                            <div class="center aligned header">Shocking Emissions</div>
-                            <div class="center aligned meta">2021-05-04</div>
-                        </div>
-                        <div class="extra content">
-                            Software Engineering, Meteor, React
-                            <button class="modal-button" href="#shocking">詳しく見る</button>
+                            <span>Software Engineering, JavaScript, React</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- The Modal -->
-                <div id="shocking" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-
-                        <span class="close">×</span>
-                        <h2 style="text-align: center;">Shocking Emission</h2>
-                        <hr>
-
-
-                        <div class="modal-body">
-                            <div class="ui two column grid">
-                                <div class="row">
-                                    <div class="column">
-                                        <p>ハワイの電気会社に契約しているお客さんが1日にどのくらいCO2を自動的に計算するアプリで、
-                                            どのような方法でCO2を削減をできるかを教えるアプリです。<br />
-                                            フレームワークはSemantic UI Reactを使用、JavaScript React (JSX)
-                                            によるアニメーションも取り入れ、楽に使用出来るるよう工夫しています。
-                                        </p>
-                                        <div style="text-align: left;">
-                                            <a href="https://shocking-development.github.io/"><i
-                                                    class="play icon"></i>Documentation</a><br />
-                                            <a href="https://shocking-development.github.io/"><i
-                                                    class="github icon"></i>GitHub</a>
-                                        </div>
-                                        <br />
-                                        <h3 style="text-align: center;">使用言語</h3>
-
-                                        JavaScript React, Meteor, Node.js
-
-                                    </div>
-                                    <div class="column">
-                                        <img class="ui big centered image"
-                                            src="https://github.com/saitoshi/images/blob/main/shockingemission/shockingemissions.gif?raw=true">
-                                        <div class="comment">Shocking EmissionのアプリのサンプルGIF
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="filterDiv translation">
-                    <div class="ui centered card" href="tregear.html">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/jpn/tregear.png?raw=true">
-                        <div class="content">
-                            <div class="center aligned header"> Tregear Story Translation</div>
-                            <div class="center aligned meta"> 2020-12-13 </div>
-                        </div>
-                        <div class="extra content">
-                            日英通訳<br />
-                            <button class="modal-button" href="#tregear">詳しく見る</button>
+                <div class="row">
+                    <div class="filterDiv translation">
+                        <div class="card">
+                            <img class="ui medium centered image"
+                                src="https://github.com/saitoshi/images/blob/main/jpn/tregear.png?raw=true"
+                                alt="tregear" />
+                            <h2 style="text-align: center;">Tregear Story</h2>
+                            <h5 style="text-align: center;">Dec 2020</h5>
+                            <p style="text-align: left;">
+                            <ul style="text-align: left;">
+                                <li><b>説明：</b>レポートとして、日本語で書かれたショートストーリーを英語に翻訳する内容。物語は「トレギア物語（ストーリー）」でそれをどのように翻訳をしたレポートと
+                                    翻訳したファイルをオンラインでプレゼンをしました。
+                                </li>
+                                <li><b>主な作業</b>
+                                    <ul>
+                                        <li>翻訳内容</li>
+                                        <li>翻訳プロセスについて</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </p>
+                            <hr>
+                            <span>Software Engineering, JavaScript, React</span>
                         </div>
                     </div>
                 </div>
-                <div id="tregear" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-
-                        <span class="close">×</span>
-                        <h2 style="text-align: center;">Tregear Story</h2>
-                        <hr>
-
-
-                        <div class="modal-body">
-                            <div class="ui two column grid">
-                                <div class="row">
-                                    <div class="column">
-                                        <p>ハワイ大学のJPN 425の最終試験として日本のショートストーリーを英語に通訳するさい、「ウルトラマンタイガ超全集」
-                                            に収録された「トレギア物語 (著者：中野貴雄)」を英語に通訳しました。
-                                        <h4 style="text-align: center;">Translated Summary</h4>
-                                        The name “Tregear” in the seven spaces means “disaster”, “temptation”, and
-                                        “contraindication“. This is the story when “he” was still an Ultraman at the
-                                        Land of
-                                        Light….
-
-                                        </p>
-                                        <div style="text-align: left;">
-                                            <a
-                                                href="https://github.com/saitoshi/old-/blob/main/doc/TregearStoryFinalDraft.pdf"><i
-                                                    class="play icon"></i>英語版</a><br />
-                                        </div>
-                                        <br />
-                                    </div>
-                                    <div class="column">
-                                        <img class="ui big centered image"
-                                            src="https://images-na.ssl-images-amazon.com/images/I/616IbasANdL.jpg">
-                                        <div class="comment">ショートストーリーが収録されているウルトラマンタイガ
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="filterDiv webDesign">
-                    <a class="ui centered card" href="math.html">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/math/math.jpeg?raw=true">
-                        <div class="content">
-                            <div class="header"> UH Manoa Math Review Website </div>
-                            <div class="center aligned meta"> 2020-06-01 </div>
-                        </div>
-                        <div class="extra content">
-                            Web Design
-                        </div>
-                    </a>
-                </div>
-
-                <div class="filterDiv cs">
-                    <div class="ui centered card" href="textbook.html">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/textbookhunt/textbookhunt.png?raw=true">
-                        <div class="content">
-                            <div class="center aligned header">Textbook Hunt </div>
-                            <div class="center aligned meta"> 2020-05-15 </div>
-                        </div>
-                        <div class="extra content">
-                            Software Engineering, Meteor, React
-                            <button class="modal-button" href="#textbook">詳しく見る</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- The Modal -->
-                <div id="textbook" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-
-                        <span class="close">×</span>
-                        <h2 style="text-align: center;">Textbook Hunt</h2>
-                        <hr>
-
-
-                        <div class="modal-body">
-                            <div class="ui two column grid">
-                                <div class="row">
-                                    <div class="column">
-                                        <p>ハワイ大学生が学生同士で中古の教科書を販売などが出来るアプリです。<br />
-                                            フレームワークはSemantic UI Reactを使用、JavaScript React (JSX)
-                                            によるアニメーションも取り入れ、楽に使用出来るるよう工夫しています。
-                                        </p>
-                                        <div style="text-align: left;">
-                                            <a href="https://textbookhunt.github.io/"><i
-                                                    class="play icon"></i>Documentation</a><br />
-                                            <a href="https://github.com/textbookhunt/textbookhunt"><i
-                                                    class="github icon"></i>GitHub</a>
-                                        </div>
-                                        <br />
-                                        <h3 style="text-align: center;">使用言語</h3>
-
-                                        JavaScript React, Meteor, Node.js
-
-                                    </div>
-                                    <div class="column">
-                                        <img class="ui big centered image"
-                                            src="https://textbookhunt.github.io/doc/landing.png">
-                                        <div class="comment">Textbook Huntのホームスクショ
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="filterDiv translation">
-                    <a class="ui centered  card" href="toku.html">
-                        <img class="ui medium centered image"
-                            src="https://github.com/saitoshi/images/blob/main/jpn/Toei-Tokusatsu-header.png?raw=true">
-                        <div class="content">
-                            <div class="ui centered aligned header"> Japanese Tokusatsu Paper </div>
-                            <div class="center aligned meta"> 2019-05-15 </div>
-                        </div>
-                        <div class="extra content">
-                            Japanese, Research Paper
-                        </div>
-                    </a>
-                </div>
-
-
             </div>
+            <div class="push"></div>
+            <footer style="background-color: whitesmoke; text-align: center;">
+                <br />
+                <a href="index.html"><i class="home icon" style="font-size: 30px; color:black;"></i></a><br />
+                &#xA9; Shin Saito 2022
+
+            </footer>
 
 
-        </div>
         </div>
 
     </body>
