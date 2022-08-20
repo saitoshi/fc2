@@ -2,35 +2,32 @@
   text-align: center;
   display: none;
   transition: 0.3s;
- 
+}
 
-  
-  }
+.projectInfo {
+  padding: 2px 16px;
+}
 
-  .projectInfo {
-    padding: 2px 16px;
-  }
-  
 .show {
-    display: block;
+  display: block;
 }
 
 .filterBtnContainer {
-    padding-left: 60px;
-    margin-top: 20px;
-    overflow: hidden;
+  padding-left: 60px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .filterBtn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
 }
 
 .filterBtn :hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .filterBtn.active {
@@ -49,8 +46,8 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -69,7 +66,7 @@
 }
 
 .modal-left {
-  width:25%
+  width: 25%;
 }
 
 .modal-right {
@@ -88,7 +85,6 @@
   color: blue;
 }
 
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -106,20 +102,30 @@
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
- /* Smartphones (portrait and landscape) ----------- */
- @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .filterDiv {
-    max-width: 50%;
+    max-width: auto;
   }
- 
- }
-
+}
