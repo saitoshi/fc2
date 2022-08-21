@@ -1,3 +1,7 @@
+#navIcon {
+  font-size: 40px;
+  padding-top: 8px;
+}
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -81,7 +85,11 @@ code p {
   height: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 500px) {
+  #navIcon {
+    font-size: 30px;
+    padding-top: 8px;
+  }
   .sidenav {
     height: 100%;
     width: 0;
