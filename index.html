@@ -1,168 +1,174 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Shun Portfolio | Home </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta name="author" content="Shin">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YD9L68RKBM"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push( arguments ); }
-        gtag( 'js', new Date() );
+<head>
+    <title>Shun Portfolio | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Shin">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YD9L68RKBM"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag( 'config', 'G-YD9L68RKBM' );
-    </script>
-    <script src="js/menu.js" type="text/javascript"></script>
-    <style>
-        .posts {
-            min-height: 50%;
-            width: auto;
-        }
+    gtag('config', 'G-YD9L68RKBM');
+</script>
+<script src="js/menu.js" type="text/javascript"></script>
+<style>
+    .posts {
+        min-height: 50%;
+        width: auto;
+    }
 
-        .column {
-            float: left;
-            width: 50%;
-        }
+    .column {
+        float: left;
+        width: 50%;
+    }
 
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
+    body {
+        overflow: auto;
+    }
+
+    @media screen and (max-width: 600px) {
         body {
             overflow: auto;
         }
 
-        @media screen and (max-width: 600px) {
-            body {
-                overflow: auto;
-            }
-
-            .column {
-                width: 100%;
-            }
-
-            .posts {
-                height: 75%;
-                width: auto;
-            }
-
-            .p {
-                font-size: 10px;
-                text-align: center;
-            }
+        .column {
+            width: 100%;
         }
-    </style>
 
-    <body>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
-            <a href="work.html"><i class="file outline icon"></i> WORKS</a>
-            <a href="blog.html"><i class="pencil alternate icon"></i> WRITE UPS</a>
-            <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+        .posts {
+            height: 75%;
+            width: auto;
+        }
 
+        .p {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="bio.html"><i class="user circle outline icon"></i> RESUME</a>
+        <a href="work.html"><i class="file outline icon"></i> WORKS</a>
+        <a href="blog.html"><i class="pencil alternate icon"></i> WRITE UPS</a>
+        <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
+
+    </div>
+
+
+    <div id="main">
+        <span id="navIcon" style="overflow-y: scroll" onclick="openNav()">&#9776;</span>
+        <h1 style="text-align: center; text-decoration: underline;">WELCOME TO MY WORLD</h1>
+        <div class="posts" id="about">
+            <h2 style="text-align: center; color: black; top: 50%;">ABOUT ME</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="ui circular centered medium image" src="https://saitoshi.github.io/img/about.jpg">
+
+                </div>
+                <div class="column">
+                    <p> Born in Yokohama, I attended to elementary school in Japan. <br />
+                        Then I did remaining of my studies at United States. <br />
+                        Currently, I am working at the following companies:
+                    <ul>
+                        <li>Local Venture Room, Part Time Full Stack Developer <br />
+                            I work as a part time developer working on projects based on client's request and/or
+                            company's goal.
+                        </li>
+                        <li>CloverTech Inc. as a Translator/Interpreter and Technology Service Provider<br />
+                            I translate important documents and manuals from Japanese to English and vice versa,
+                            participate in meetings and provide interpertation. Additionally, I provide updates to
+                            the
+                            company's website and client's wordpress based websites.
+                        </li>
+                        <li><b>PROVE CO. LTD</b> as a Part Time Japanese To English Translator/Interpreter & Part Time
+                            Engineer<br />
+                            I translate important documents from Japanese to English that makes sense to native
+                            speakers. Also work on different online projects that
+                            the company helps with clients.
+                        </li>
+                        <li>
+                            Also working as freelance translator translating articles for some local Japanese
+                            companies.
+                        </li>
+
+                    </ul>
+                    Here is a simple bio detail:
+                    <ul style="text-align: left;">
+                        <li>Personal Motto: WORK MORE PLAY LESS</li>
+                        <li>Bachelor Of Science in Computer Science & Mathematics</li>
+                        <li> GitHub: <a href="https://github.com/saitoshi">https://github.com/saitoshi</a></li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <a href="bio.html" class="large ui button">FOR RESUME</a>
+                    </div>
+                    <p>横浜生まれで小学校までは日本で、大学までアメリカで通っておりました。<br />
+                        現在は以下の仕事に取り組んでおります。
+                    <ul>
+                        <li>株式会社ローカルベンチャールーム: プログラマー</li>
+                        <li>株式会社クローバーテック: 海外製品の翻訳と通訳担当</li>
+                    </ul>
+                    </p>
+                    <div style="text-align: center;">
+                        <a href="bioJPN.html" class="large ui button">履歴について</a>
+                    </div>
+                    </p>
+
+                </div>
+            </div>
+            <br />
+        </div>
+
+        <div class="posts" style="background-color: whitesmoke;">
+            <br />
+            <h2 style="text-align: center; color: black; top: 50%;">ABOUT SITE</h2>
+            <div class="row">
+                <div class="column">
+                    <p style="padding-left: 10px;">This is a portfolio site storing all of my previous work.<br />
+                        I hope this helps you to get a better understanding of.
+                        <br />
+                    <div style="text-align: center;">
+                        <a href="work.html" class="large ui button">PREVIOUS WORKS</a>
+                    </div>
+                    本サイトは過去に担当した企画などをまとめたポートフォリオサイトとなっております。<br />
+                    これで私について知っていただけたら幸いです。
+                    <div style="text-align: center;">
+                        <a href="workJPN.html" class="large ui button">実績</a>
+                    </div>
+                    <br />
+                    </p>
+                </div>
+
+                <div class="column">
+                    <img class="ui centered medium image"
+                        src="https://beep.co.jp/wp-content/themes/twentytwenty-child/images/common/ph_img_05.jpg">
+                    <br />
+
+                </div>
+
+            </div>
+            <div class="push"></div>
         </div>
 
 
-        <div id="main">
-            <span id="navIcon" style="overflow-y: scroll" onclick="openNav()">&#9776;</span>
-            <h1 style="text-align: center; text-decoration: underline;">WELCOME TO MY WORLD</h1>
-            <div class="posts" id="about">
-                <h2 style="text-align: center; color: black; top: 50%;">ABOUT ME</h2>
-                <div class="row">
-                    <div class="column">
-                        <img class="ui circular centered medium image" src="https://saitoshi.github.io/img/about.jpg">
+    </div>
 
-                    </div>
-                    <div class="column">
-                        <p> Born in Yokohama, I attended to elementary school in Japan. <br />
-                            Then I did remaining of my studies at United States. <br />
-                            Currently, I am working at the following companies:
-                        <ul>
-                            <li>Local Venture Room, Part Time Full Stack Developer <br />
-                                I work as a part time developer working on projects based on client's request and/or
-                                company's goal.
-                            </li>
-                            <li>CloverTech Inc. as a Translator/Interpreter and Technology Service Provider<br />
-                                I translate important documents and manuals from Japanese to English and vice versa,
-                                participate in meetings and provide interpertation. Additionally, I provide updates to
-                                the
-                                company's website and client's wordpress based websites.
-                            </li>
-                            <li>
-                                Also working as freelance translator translating articles for some local Japanese
-                                companies.
-                            </li>
-
-                        </ul>
-                        Here is a simple bio detail:
-                        <ul style="text-align: left;">
-                            <li>Personal Motto: WORK MORE PLAY LESS</li>
-                            <li>Bachelor Of Science in Computer Science & Mathematics</li>
-                            <li> GitHub: <a href="https://github.com/saitoshi">https://github.com/saitoshi</a></li>
-                        </ul>
-                        <div style="text-align: center;">
-                            <a href="bio.html" class="large ui button">FOR RESUME</a>
-                        </div>
-                        <p>横浜生まれで小学校までは日本で、大学までアメリカで通っておりました。<br />
-                            現在は以下の仕事に取り組んでおります。
-                        <ul>
-                            <li>株式会社ローカルベンチャールーム: プログラマー</li>
-                            <li>株式会社クローバーテック: 海外製品の翻訳と通訳担当</li>
-                        </ul>
-                        </p>
-                        <div style="text-align: center;">
-                            <a href="bioJPN.html" class="large ui button">履歴について</a>
-                        </div>
-                        </p>
-
-                    </div>
-                </div>
-                <br />
-            </div>
-
-            <div class="posts" style="background-color: whitesmoke;">
-                <br />
-                <h2 style="text-align: center; color: black; top: 50%;">ABOUT SITE</h2>
-                <div class="row">
-                    <div class="column">
-                        <p style="padding-left: 10px;">This is a portfolio site storing all of my previous work.<br />
-                            I hope this helps you to get a better understanding of.
-                            <br />
-                        <div style="text-align: center;">
-                            <a href="work.html" class="large ui button">PREVIOUS WORKS</a>
-                        </div>
-                        本サイトは過去に担当した企画などをまとめたポートフォリオサイトとなっております。<br />
-                        これで私について知っていただけたら幸いです。
-                        <div style="text-align: center;">
-                            <a href="workJPN.html" class="large ui button">実績</a>
-                        </div>
-                        <br />
-                        </p>
-                    </div>
-
-                    <div class="column">
-                        <img class="ui centered medium image"
-                            src="https://beep.co.jp/wp-content/themes/twentytwenty-child/images/common/ph_img_05.jpg">
-                        <br />
-
-                    </div>
-
-                </div>
-                <div class="push"></div>
-            </div>
-
-
-        </div>
-
-    </body>
-    <script src="js/menu.js"></script>
+</body>
+<script src="js/menu.js"></script>
