@@ -91,6 +91,13 @@ code p {
   height: 50px;
 }
 
+.subtitle {
+  font-size: 18px;
+  font-weight: bolder;
+  color: black;
+  text-align: left !important;
+}
+
 @media screen and (max-height: 500px) {
   #navIcon {
     font-size: 30px;
