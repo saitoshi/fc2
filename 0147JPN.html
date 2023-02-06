@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iseda | 0147 </title>
+    <title>SHIN | 0147 </title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
@@ -19,7 +19,7 @@
         <a href="work.html"><i class="file outline icon"></i> WORKS</a>
         <a href="blog.html"><i class="pencil alternate icon"></i> ESSAYS</a>
         <a href="mailto:saitoshin2145@gmail.com"><i class="envelope outline icon"></i> EMAIL</a>
-        <a href="0147JPN.html" class="bottom">日本語</a>
+        <a href="0147.html" class="bottom">ENGLISH</a>
     </div>
     <span style="font-size: 30px" onclick="openNav()">&#9776;</span>
     <div id="main">
@@ -31,13 +31,11 @@
                 <span class="bold-list"> November 2022 to ONGOING</span>
                 <hr />
             </div>
-            <div class="ui text container">
+            <div class="ui container">
                 <h2 style="text-align: left; font-weight: bold;">OVERVIEW</h2>
-                <p>This application was created as a project for <a href="https://www.city.kumamoto.jp/">Kumamoto
-                        City</a> under Local Venture Room INC. The
-                    application stores <a href="https://en.wikipedia.org/wiki/Open_innovation">"Open Innovation"</a>
-                    based project. <br />
-                    Users can create accounts and register their innovation ideas or submit their solutions. <br />
+                <p> <a href="https://www.city.kumamoto.jp/">熊本市</a> のために、オープンイノベーションをまとめたサイトをLocal Venture Room
+                    INC.が作成した <br />
+                    基本的にはユーザーはメールアドレスで会員登録をし、開催されているイノベーションへ提案を提出する流れがベースとなっております。<br />
                     <img class="ui centered big image"
                         src="https://github.com/saitoshi/images/blob/main/0147top.png?raw=true" alt="0147_top">
                 <div class="comment"><button style="background-color: red; outline: red;"><a style="color: white"
@@ -45,30 +43,30 @@
                             WEBSITE</a></button>
                 </div>
                 <h2 style="text-align: left; font-weight: bold;">TECHNICAL SHEET</h2>
-                The website was MERN Stack with the following details
+                システムはMERNベースで作成されました。以下が細かい内容です。
                 <ul>
-                    <li>The design layout was created using Figma.</li>
-                    <li>The frontend used TypeScript React with Bootstrap React as its framework.</li>
-                    <li>The backend used TypeScript, Express, & Node.JS</li>
-                    <li>The database was stored using MongoDB.</li>
-                    <li>The PDF files that users would upload or submit was stored to AWS S3 Bucket.</li>
-                    <li>The code was written using Visual Studio Code.</li>
+                    <li>デザインレイアウトはFIGMAで作成されました</li>
+                    <li>フロントエンドはTypeScript ReactとReact Bootstrapをフレームワークとして作成されました。</li>
+                    <li>バックエンドはTypeScript, Express, Node JSで作成されました。</li>
+                    <li>データーベースはMongoDBで登録されています。</li>
+                    <li>ユーザーが提出するPDF類は全て、AWSのS3 Bucketに保存されております。</li>
+                    <li>コード作業は全てVisual Studio Code とGitHubをチームとして使用しました</li>
                 </ul>
                 <h2 style="text-align: left; font-weight: bold;">TASKS</h2>
-                This was my <b>first</b> paid project using MERN stack development. At this point, my past project were
-                <b>meteor-based</b>. Therefore, there was some hurdles
-                that I faced. Most of my responsibilities at first was backend based. However, as it progressed my
-                responsibilities also covered the front end side too.
+                大学の研究、インターン、仕事は大体Meteorベース又はWordPressを使用していたサイトマネジメントだったために、今回が初Mernのプロジェクトでした。<br />
+                基本的にはバックエンドを担当をしていましたが、フロントとバックのリンクの作成やテストなども行いました。今回のプロジェクトは初めての経験も多かったために次のプロジェクトへの
+                反省点は結構ありますが、今度どのようにプロジェクトマネージメントへ活かしたいと思います。<br />
+                以下が0147で担当した作業になります。
                 <ul>
-                    <li>Created the user-related APIs with the aid from MERN stack development manual</li>
-                    <li>Connected the frontend and backend functions for account registeration, user login, other
-                        account related activities, and innovation submissions. </li>
-                    <li>Connected the application to an AWS S3 Bucket to store PDF files</li>
-                    <li>With the assistance of nodemailer, made it possible so users and management can receive emails
-                        related to innovation activities</li>
+                    <li>YouTubeやネットにあるMERNマニュアルを参考に、ユーザーやイノベーション関係のAPI作成</li>
+                    <li>ログインページと会員登録ページをバックエンドと接続するように設定を変更する </li>
+                    <li>MongoDBでデーターベース用のSchemaとCollectionの作成</li>
+                    <li>ユーザーのパスワード変更やパスワードを忘れた場合のフロントとバックエンド関係の作成</li>
+                    <li>AWSとのリンクを作成、それにより必要なPDFファイルがバケットに保存される</li>
+                    <li>NodeMailerを使用し、ユーザー関係でイベントが起きると、運営側とユーザー側が通知するように設定</li>
                 </ul>
                 <h2 style="text-align: left; font-weight: bold;">SAMPLE SCREENSHOTS</h2>
-                Below are sample screenshots of the website.
+                以下がサイトのスクショをまとめたものになります。
 
                 <div style="text-align: center;">
                     <a target="_blank"
@@ -90,7 +88,7 @@
                             alt="0147_listings" style="width: 150px;">
                     </a>
                     <br />
-                    (From left to right) Account Registeration Page, User Profile Page, Innovation Listing Page
+                    (左から右) アカウント登録, ユーザープロフィール, イノベーションまとめページ
                 </div>
 
 
